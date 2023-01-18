@@ -1,0 +1,37 @@
+{
+	"name": "pluto-syntax-highlighting",
+	"displayName": "Pluto Syntax Highlighting",
+	"description": "",
+	"version": "0.0.0",
+	"publisher": "Calamity, Inc.",
+	"repository": "https://github.com/PlutoLang/Syntax-Highlighting",
+	"engines": {
+		"vscode": "^1.65.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "pluto",
+				"aliases": ["Pluto"],
+				"extensions": [".pluto"]
+			}
+		],
+		"grammars": [
+			{
+				"language": "pluto",
+				"scopeName": "source.pluto",
+				"path": "./pluto.tmLanguage.json"
+			}
+		]
+	},
+	"scripts": {
+		"update": "vscode-grammar-updater PlutoLang/Syntax-Highlighting Pluto.tmbundle/Syntaxes/Pluto.tmLanguage Pluto.tmLanguage.json",
+		"pack": "vsce package"
+	},
+	"devDependencies": {
+		"vscode-grammar-updater": "^1.1.0"
+	}
+}

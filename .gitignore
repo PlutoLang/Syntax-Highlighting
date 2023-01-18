@@ -1,0 +1,10 @@
+# JS Bloat
+node_modules/
+package-lock.json
+
+# Generated VSC Grammar
+Pluto.tmLanguage.json
+
+# Packed VSC Extension
+*.vsix
+
