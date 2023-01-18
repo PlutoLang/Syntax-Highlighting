@@ -9,7 +9,7 @@ Open a console in this folder to run the following command:
 git clone https://github.com/PlutoLang/Syntax-Highlighting Pluto
 ```
 
-You should now see "Pluto" as a syntax highlighting option in Sublim Text.
+You should now see "Pluto" as a syntax highlighting option in Sublime Text.
 
 ## License
 
