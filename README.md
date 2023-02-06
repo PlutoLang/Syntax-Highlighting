@@ -1,5 +1,9 @@
 # Pluto Syntax Highlighting
 
+## VS Code Installation
+
+Head on over to [the Releases page](https://github.com/PlutoLang/Syntax-Highlighting/releases), download the latest VSIX, and drop it into VS Code.
+
 ## Sublime Text Installation
 
 In Sublime Text, select **Preferences > Browse Packages...** to open the "Packages" folder of your ST installation.
