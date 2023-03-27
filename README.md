@@ -6,6 +6,8 @@ Head on over to [the Releases page](https://github.com/PlutoLang/Syntax-Highligh
 
 ## Sublime Text Installation
 
+If you don't have Git installed, [do so first](https://github.com/git-guides/install-git).
+
 In Sublime Text, select **Preferences > Browse Packages...** to open the "Packages" folder of your ST installation.
 
 Open a console in this folder to run the following command:
