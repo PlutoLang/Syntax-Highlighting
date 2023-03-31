@@ -28,7 +28,7 @@
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.control.pluto</string>
+					<string>keyword.declaration.function.pluto</string>
 				</dict>
 				<key>3</key>
 				<dict>
