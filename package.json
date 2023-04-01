@@ -2,7 +2,7 @@
 	"name": "pluto-syntax-highlighting",
 	"displayName": "Pluto Syntax Highlighting",
 	"description": "Provides syntax highlighting for the Pluto language.",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"publisher": "Calamity, Inc.",
 	"icon": "icon.png",
 	"repository": "https://github.com/PlutoLang/Syntax-Highlighting",
