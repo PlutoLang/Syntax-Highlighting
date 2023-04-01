@@ -24,13 +24,9 @@
 			{
 				"language": "pluto",
 				"scopeName": "source.pluto",
-				"path": "./pluto.tmLanguage.json"
+				"path": "./Pluto.tmbundle/Syntaxes/Pluto.tmLanguage"
 			}
 		]
-	},
-	"scripts": {
-		"update": "vscode-grammar-updater PlutoLang/Syntax-Highlighting Pluto.tmbundle/Syntaxes/Pluto.tmLanguage Pluto.tmLanguage.json",
-		"pack": "vsce package"
 	},
 	"devDependencies": {
 		"vscode-grammar-updater": "^1.1.0"
