@@ -26,6 +26,12 @@
 				"scopeName": "source.pluto",
 				"path": "./Pluto.tmbundle/Syntaxes/Pluto.tmLanguage"
 			}
+		],
+		"snippets": [
+			{
+				"language": "pluto",
+				"path": "./Pluto.tmbundle/Snippets/_vscode.code-snippets"
+			}
 		]
 	},
 	"devDependencies": {
