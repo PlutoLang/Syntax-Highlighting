@@ -73,6 +73,29 @@
 					<key>name</key>
 					<string>constant.language.pluto</string>
 				</dict>
+				<dict>
+					<key>begin</key>
+					<string>(=)</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.operator.pluto</string>
+						</dict>
+					</arary>
+					<key>end</key>
+					<string>[,\)]</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>#simpleexp</string>
+						</dict>
+					</array>
+					<key>name</key>
+					<string>meta.default-arguments.pluto</string>
+				</dict>
 			</array>
 		</dict>
 		<dict>
