@@ -7,3 +7,8 @@ local d = new Deez(1 + 2);
 print(d.prop .. "\n");
 
 enum Suit end
+
+switch 3 do
+	default:
+	case 3: break
+end
