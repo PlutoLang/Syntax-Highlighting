@@ -324,9 +324,15 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;![^.]\.|:)\b(false|nil|true|_G|_VERSION|_PVERSION|_PSOUP|math\.(pi|huge))\b|(?&lt;![.])\.{3}(?!\.)</string>
+			<string>(?&lt;![^.]\.|:)\b(false|nil|true)\b|(?&lt;![.])\.{3}(?!\.)</string>
 			<key>name</key>
 			<string>constant.language.pluto</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?&lt;![^.]\.|:)\b(_G|_VERSION|_PVERSION|_PSOUP|math\.(pi|huge))\b</string>
+			<key>name</key>
+			<string>support.constant.builtin.pluto</string>
 		</dict>
 		<dict>
 			<key>match</key>
