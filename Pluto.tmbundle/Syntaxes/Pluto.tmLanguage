@@ -34,7 +34,7 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.declaration.function.pluto</string>
+							<string>storage.type.function.pluto</string>
 						</dict>
 						<key>2</key>
 						<dict>
@@ -312,7 +312,7 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.declaration.class.pluto</string>
+							<string>storage.type.class.pluto</string>
 						</dict>
 						<key>2</key>
 						<dict>
@@ -323,7 +323,7 @@
 					<key>match</key>
 					<string>\b((?:pluto_)?class)\s+([a-zA-Z_][a-zA-Z0-9_]*)?</string>
 					<key>name</key>
-					<string>constant.other.placeholder.pluto</string>
+					<string>meta.class.pluto</string>
 				</dict>
 				<dict>
 					<key>captures</key>
