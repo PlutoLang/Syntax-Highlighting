@@ -1,0 +1,7 @@
+
+class Deez extends That
+	static function deez()
+	end
+end
+local d = new Deez(1 + 2);
+print(d.prop .. "\n");
