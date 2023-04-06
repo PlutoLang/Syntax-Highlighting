@@ -17,18 +17,18 @@
 	<array>
 		<dict>
 			<key>begin</key>
-			<string>\b(?:(local)\s+)?(function)\s*(?:\s+([a-zA-Z_][a-zA-Z0-9_]*(?:([\.:])[a-zA-Z_][a-zA-Z0-9_]*)?)\s*)?(\()</string>
+			<string>(function)\s*(?:[a-zA-Z_][a-zA-Z0-9_]*([\.:]))?([a-zA-Z_][a-zA-Z0-9_]*)?\s*(\()?</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>storage.modifier.local.pluto</string>
+					<string>keyword.declaration.function.pluto</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.declaration.function.pluto</string>
+					<string>punctuation.separator.parameter.pluto</string>
 				</dict>
 				<key>3</key>
 				<dict>
@@ -36,11 +36,6 @@
 					<string>entity.name.function.pluto</string>
 				</dict>
 				<key>4</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.separator.parameter.pluto</string>
-				</dict>
-				<key>5</key>
 				<dict>
 					<key>name</key>
 					<string>punctuation.definition.parameters.begin.pluto</string>
@@ -323,7 +318,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(break|continue|do|else|for|if|elseif|goto|return|switch|pluto_switch|then|repeat|while|until|when|end|function|local|in|as|case|default|enum|begin)\b</string>
+			<string>\b(break|continue|do|else|for|if|elseif|goto|return|switch|pluto_switch|then|repeat|while|until|when|end|local|in|as|case|default|enum|begin)\b</string>
 			<key>name</key>
 			<string>keyword.control.pluto</string>
 		</dict>
