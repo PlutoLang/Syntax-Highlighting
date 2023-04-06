@@ -5,3 +5,5 @@ class Deez extends That
 end
 local d = new Deez(1 + 2);
 print(d.prop .. "\n");
+
+enum Suit end
