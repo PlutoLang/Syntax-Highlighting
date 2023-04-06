@@ -336,6 +336,25 @@
 			<string>constant.other.placeholder.pluto</string>
 		</dict>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.pluto</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.other.inherited-class.pluto</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(extends)\s+([a-zA-Z_][a-zA-Z0-9_]*)?</string>
+			<key>name</key>
+			<string>constant.other.placeholder.pluto</string>
+		</dict>
+		<dict>
 			<key>match</key>
 			<string>\b(break|continue|do|else|for|if|elseif|goto|return|switch|pluto_switch|then|repeat|while|until|when|end|local|in|as|case|default|enum|begin|new)\b</string>
 			<key>name</key>
