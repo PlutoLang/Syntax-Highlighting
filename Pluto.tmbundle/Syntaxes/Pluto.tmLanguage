@@ -417,7 +417,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(and|or|not)\b</string>
+			<string>\b(and|or|not|instanceof)\b</string>
 			<key>name</key>
 			<string>keyword.operator.pluto</string>
 		</dict>
