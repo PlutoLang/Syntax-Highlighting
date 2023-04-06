@@ -341,7 +341,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.control.pluto</string>
+					<string>storage.modifier.extends.pluto</string>
 				</dict>
 				<key>2</key>
 				<dict>
@@ -365,7 +365,7 @@
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.declaration.class.pluto</string>
+					<string>support.class.pluto</string>
 				</dict>
 			</dict>
 			<key>match</key>
@@ -438,6 +438,18 @@
 			<string>\+|-|%|#|\*|\/|\^|==?|~=|&lt;=?|&gt;=?|(?&lt;!\.)\.{2}(?!\.)|\?\.?|\:=</string>
 			<key>name</key>
 			<string>keyword.operator.pluto</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b\.\b</string>
+			<key>name</key>
+			<string>punctuation.accessor.pluto</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>;</string>
+			<key>name</key>
+			<string>punctuation.terminator.pluto</string>
 		</dict>
 	</array>
 	<key>repository</key>
