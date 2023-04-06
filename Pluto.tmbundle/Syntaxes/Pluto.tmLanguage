@@ -399,6 +399,12 @@
 		</dict>
 		<dict>
 			<key>match</key>
+			<string>(?&lt;![^.]\.|:)\b((pluto_)?parent)\b</string>
+			<key>name</key>
+			<string>variable.language.parent.pluto</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>(?&lt;![^.]\.|:)\b(assert|collectgarbage|dofile|error|getfenv|getmetatable|ipairs|loadfile|loadstring|module|next|pairs|pcall|print|rawequal|rawget|rawset|require|select|setfenv|setmetatable|tonumber|tostring|type|unpack|xpcall)\b(?=\s*(?:[({"']|\[\[))</string>
 			<key>name</key>
 			<string>support.function.pluto</string>
