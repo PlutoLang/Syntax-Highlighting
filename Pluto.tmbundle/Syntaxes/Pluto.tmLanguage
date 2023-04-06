@@ -101,7 +101,7 @@
 							<array>
 								<dict>
 									<key>include</key>
-									<string>#simpleexp</string>
+									<string>#pluto</string> <!-- not using simpleexp because default arguments uses 'expr' (indirectly, causing unary + and - to be available.) --> 
 								</dict>
 							</array>
 							<key>name</key>
