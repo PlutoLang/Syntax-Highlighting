@@ -69,7 +69,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\.{3}</string>
+					<string>\.\.\.</string>
 					<key>name</key>
 					<string>constant.language.pluto</string>
 				</dict>
@@ -324,7 +324,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;![^.]\.|:)\b(false|nil|true)\b|(?&lt;![.])\.{3}(?!\.)</string>
+			<string>(?&lt;![^.]\.|:)\b(false|nil|true)\b|(?&lt;![.])\.\.\.(?!\.)</string>
 			<key>name</key>
 			<string>constant.language.pluto</string>
 		</dict>
