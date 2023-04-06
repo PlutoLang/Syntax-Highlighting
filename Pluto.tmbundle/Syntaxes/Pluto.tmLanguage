@@ -317,7 +317,7 @@
 						<key>2</key>
 						<dict>
 							<key>name</key>
-							<string>entity.name.class.pluto</string>
+							<string>entity.name.type.class.pluto</string>
 						</dict>
 					</dict>
 					<key>match</key>
@@ -336,7 +336,7 @@
 						<key>2</key>
 						<dict>
 							<key>name</key>
-							<string>entity.name.enum.pluto</string>
+							<string>entity.name.type.enum.pluto</string>
 						</dict>
 					</dict>
 					<key>match</key>
