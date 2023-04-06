@@ -328,9 +328,15 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(break|continue|do|else|for|if|elseif|goto|return|switch|pluto_switch|then|repeat|while|until|when|end|local|export|pluto_export|in|as|case|default|enum|begin)\b</string>
+					<string>\b(break|continue|do|else|for|if|elseif|goto|return|switch|pluto_switch|then|repeat|while|until|when|end|in|as|case|default|enum|begin)\b</string>
 					<key>name</key>
 					<string>keyword.control.pluto</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\b(local|static|export|pluto_export)\b</string>
+					<key>name</key>
+					<string>storage.modifier.pluto</string>
 				</dict>
 				<dict>
 					<key>match</key>
