@@ -566,7 +566,7 @@
 						<key>0</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.definition.table.begin.pluto</string>
+							<string>punctuation.section.table.begin.pluto</string>
 						</dict>
 					</dict>
 					<key>end</key>
@@ -576,7 +576,7 @@
 						<key>0</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.definition.table.end.pluto</string>
+							<string>punctuation.section.table.end.pluto</string>
 						</dict>
 					</dict>
 					<key>name</key>
