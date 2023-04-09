@@ -336,11 +336,21 @@
 						<key>2</key>
 						<dict>
 							<key>name</key>
+							<string>keyword.control.pluto</string>
+						</dict>
+						<key>3</key>
+						<dict>
+							<key>name</key>
 							<string>entity.name.type.enum.pluto</string>
+						</dict>
+						<key>4</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.control.pluto</string>
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>\b((?:pluto_)?enum)\s+([a-zA-Z_][a-zA-Z0-9_]*)?</string>
+					<string>\b((?:pluto_)?enum)(?:\s+(begin)|(?:\s+([a-zA-Z_][a-zA-Z0-9_]*)?)(?:\s+(begin))?)?</string>
 					<key>name</key>
 					<string>meta.enum.pluto</string>
 				</dict>

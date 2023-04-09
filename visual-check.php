@@ -6,7 +6,8 @@ class Deez extends That {
 $d = new Deez(1 + 2);
 echo $d->prop."\n";
 
-enum Suit { }
+
+enum Suit {}
 
 switch (3) {
 	default:
