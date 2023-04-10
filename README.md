@@ -2,7 +2,7 @@
 
 ## VS Code Installation
 
-Head on over to [the Releases page](https://github.com/PlutoLang/Syntax-Highlighting/releases), download the latest VSIX, and drop it into VS Code.
+Search for `calamity-inc.pluto-syntax-highlighting` in the marketplace and press "Install."
 
 ## Sublime Text Installation
 
