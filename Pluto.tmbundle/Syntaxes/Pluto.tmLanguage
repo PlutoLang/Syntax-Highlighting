@@ -86,7 +86,7 @@
 						</dict>
 						<dict>
 							<key>begin</key>
-							<!--<string>=</string>
+							<string>=</string>
 							<key>beginCaptures</key>
 							<dict>
 								<key>0</key>
@@ -94,8 +94,7 @@
 									<key>name</key>
 									<string>keyword.operator.pluto</string>
 								</dict>
-							</arary>--> <!-- VS Code can't load this. Using lookahead instead and relying on '=' to be caught from within... -->
-							<string>(?=\=)</string>
+							</dict>
 							<key>end</key>
 							<string>(?=[,\)])</string>
 							<key>patterns</key>
