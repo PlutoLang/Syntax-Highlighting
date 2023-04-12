@@ -1,2 +1,7 @@
 ** linguist-detectable
 *.pluto linguist-language=Lua
+
+# Sublime Text Package
+Pluto.tmbundle/Snippets/*.code-snippets export-ignore
+*.png export-ignore
+visual-check.* export-ignore
