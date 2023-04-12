@@ -9,6 +9,7 @@ echo $d->prop."\n";
 
 enum Suit {}
 
+
 switch (3) {
 	default:
 	case 3: break;

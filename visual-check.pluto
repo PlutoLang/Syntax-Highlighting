@@ -8,6 +8,7 @@ print(d.prop .. "\n");
 
 enum begin end
 enum Suit begin end
+enum class colours begin end
 
 switch 3 do
 	default:
