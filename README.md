@@ -12,7 +12,7 @@ In Sublime Text, select **Preferences > Browse Packages...** to open the "Packag
 
 Open a console in this folder to run the following command:
 ```
-git clone https://github.com/PlutoLang/Syntax-Highlighting Pluto
+git clone https://github.com/PlutoLang/Syntax-Highlighting "Pluto Syntax Highlighting"
 ```
 
 You should now see "Pluto" as a syntax highlighting option in Sublime Text.
