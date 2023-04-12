@@ -21,3 +21,6 @@ function f(?string $a = "Hello"): void {}
 $h?->name ?? "John";
 $a ? $b : $c;
 
+
+goto label;
+label:

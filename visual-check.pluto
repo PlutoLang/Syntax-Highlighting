@@ -21,3 +21,6 @@ function f(a: ?string = "Hello"): void end
 h?.name ?? "John"
 a ? b : c
 h?["Hello"]
+
+goto label;
+::label::
