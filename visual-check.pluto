@@ -14,3 +14,8 @@ switch 3 do
 	default:
 	case 3: break
 end
+
+function f(a: ?string = "Hello"): void end
+
+h?.name ?? "John"
+a ? b : c
