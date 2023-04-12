@@ -5,6 +5,7 @@ class Human extends Entity {
 }
 $h = new Human(1 + 2);
 echo $h->name."\n";
+$h->sayHello();
 
 
 enum Suit {}

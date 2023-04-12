@@ -5,6 +5,7 @@ class Human extends Entity
 end
 local h = new Human(1 + 2);
 print(h.name .. "\n");
+h:sayHello()
 
 enum begin end
 enum Suit begin end
