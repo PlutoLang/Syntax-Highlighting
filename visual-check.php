@@ -1,10 +1,10 @@
 <?php
-class Deez extends That {
-	static function deez() {
+class Human extends Entity {
+	static function sayHello() {
 	}
 }
-$d = new Deez(1 + 2);
-echo $d->prop."\n";
+$h = new Human(1 + 2);
+echo $h->name."\n";
 
 
 enum Suit {}

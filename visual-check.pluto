@@ -1,10 +1,10 @@
 
-class Deez extends That
-	static function deez()
+class Human extends Entity
+	static function sayHello()
 	end
 end
-local d = new Deez(1 + 2);
-print(d.prop .. "\n");
+local h = new Human(1 + 2);
+print(h.name .. "\n");
 
 enum begin end
 enum Suit begin end
