@@ -85,6 +85,25 @@
 							<string>constant.language.pluto</string>
 						</dict>
 						<dict>
+							<key>match</key>
+							<string>(:)\s+(\??(?:string|number|int|float|bool(?:ean)?|function|table|userdata))</string>
+							<key>captures</key>
+							<dict>
+								<key>1</key>
+								<dict>
+									<key>name</key>
+									<string>punctuation.separator.colon.pluto</string>
+								</dict>
+								<key>2</key>
+								<dict>
+									<key>name</key>
+									<string>storage.type.primitive.pluto</string>
+								</dict>
+							</dict>
+							<key>name</key>
+							<string>meta.typehint.pluto</string>
+						</dict>
+						<dict>
 							<key>begin</key>
 							<string>=</string>
 							<key>beginCaptures</key>
