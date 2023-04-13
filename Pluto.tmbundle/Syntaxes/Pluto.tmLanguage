@@ -259,28 +259,8 @@
 					<string>comment.line.shebang.pluto</string>
 				</dict>
 				<dict>
-					<key>begin</key>
-					<string>--\[(=*)\[</string>
-					<key>beginCaptures</key>
-					<dict>
-						<key>0</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.definition.comment.begin.pluto</string>
-						</dict>
-					</dict>
-					<key>end</key>
-					<string>\]\1\]</string>
-					<key>endCaptures</key>
-					<dict>
-						<key>0</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.definition.comment.end.pluto</string>
-						</dict>
-					</dict>
-					<key>name</key>
-					<string>comment.block.pluto</string>
+					<key>include</key>
+					<string>#block-comment</string>
 				</dict>
 				<dict>
 					<key>begin</key>
@@ -579,6 +559,36 @@
 					<string>;</string>
 					<key>name</key>
 					<string>punctuation.terminator.pluto</string>
+				</dict>
+			</array>
+		</dict>
+		<key>block-comment</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>begin</key>
+					<string>--\[(=*)\[</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.comment.begin.pluto</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>\]\1\]</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.comment.end.pluto</string>
+						</dict>
+					</dict>
+					<key>name</key>
+					<string>comment.block.pluto</string>
 				</dict>
 			</array>
 		</dict>
