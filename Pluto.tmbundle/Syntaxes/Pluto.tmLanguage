@@ -591,6 +591,12 @@
 				</dict>
 				<dict>
 					<key>match</key>
+					<string>0[bB][01]+</string>
+					<key>name</key>
+					<string>constant.numeric.integer.binary.pluto</string>
+				</dict>
+				<dict>
+					<key>match</key>
 					<string>(?&lt;![\w\d.])\d+(?![pPeE.0-9])</string>
 					<key>name</key>
 					<string>constant.numeric.integer.pluto</string>
