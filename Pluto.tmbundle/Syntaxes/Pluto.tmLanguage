@@ -548,7 +548,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b\.\b</string>
+					<string>\b(?:\.|:)\b</string>
 					<key>name</key>
 					<string>punctuation.accessor.pluto</string>
 				</dict>
