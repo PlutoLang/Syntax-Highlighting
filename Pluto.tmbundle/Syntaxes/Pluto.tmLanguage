@@ -561,6 +561,12 @@
 				</dict>
 				<dict>
 					<key>match</key>
+					<string>,</string>
+					<key>name</key>
+					<string>punctuation.separator.comma.pluto</string>
+				</dict>
+				<dict>
+					<key>match</key>
 					<string>;</string>
 					<key>name</key>
 					<string>punctuation.terminator.pluto</string>
