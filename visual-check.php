@@ -24,3 +24,10 @@ $a[42]
 
 goto label;
 label:
+
+/**
+ * My summary
+ * @param p1 first parameter
+ * @return something
+ * @see other function
+ */
