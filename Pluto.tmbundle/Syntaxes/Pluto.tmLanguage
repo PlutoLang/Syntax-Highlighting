@@ -535,7 +535,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\+|-|%|#|\*|\/|\^|==?|~=|!=|&lt;=?|&gt;=?|(?&lt;!\.)\.{2}(?!\.)|\?\.?|\:=|\$|\||~</string>
+					<string>\+|-|%|#|\*|\/|\^|==?|~=|!=|&lt;=?|&gt;=?|(?&lt;!\.)\.{2}(?!\.)|\?\.?|\:=|\$|\||~|&amp;</string>
 					<key>name</key>
 					<string>keyword.operator.logical.pluto</string>
 				</dict>
