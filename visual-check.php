@@ -22,6 +22,5 @@ $h?->name ?? "John";
 $a ? $b : $c;
 $a[42]
 
-
 goto label;
 label:
