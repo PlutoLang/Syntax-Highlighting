@@ -322,6 +322,63 @@
 					<string>meta.goto-label.pluto</string>
 				</dict>
 				<dict>
+					<key>match</key>
+					<string>\?\?</string>
+					<key>name</key>
+					<string>keyword.operator.nullcoal.pluto</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\?\.</string>
+					<key>name</key>
+					<string>punctuation.accessor.pluto</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>(\?)\[</string>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.accessor.pluto</string>
+						</dict>
+					</dict>
+					<key>name</key>
+					<string>meta.safe-navigation-array.pluto</string>
+				</dict>
+				<dict>
+					<key>begin</key>
+					<string>\?</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.operator.pluto</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>\:</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.operator.pluto</string>
+						</dict>
+					</dict>
+					<key>name</key>
+					<string>meta.ternary.pluto</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>#pluto</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
 					<key>captures</key>
 					<dict>
 						<key>1</key>

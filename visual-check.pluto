@@ -20,7 +20,7 @@ function f(a: ?string = "Hello"): void end
 
 h?.name ?? "John"
 a ? b : c
-h?["Hello"]
+a?[42]
 
 goto label;
 ::label::

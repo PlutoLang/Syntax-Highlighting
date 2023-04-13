@@ -20,6 +20,7 @@ function f(?string $a = "Hello"): void {}
 
 $h?->name ?? "John";
 $a ? $b : $c;
+$a[42]
 
 
 goto label;
