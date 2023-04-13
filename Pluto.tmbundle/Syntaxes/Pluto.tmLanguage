@@ -125,7 +125,7 @@
 								<key>0</key>
 								<dict>
 									<key>name</key>
-									<string>keyword.operator.pluto</string>
+									<string>keyword.operator.assignment.pluto</string>
 								</dict>
 							</dict>
 							<key>end</key>
@@ -358,7 +358,7 @@
 						<key>0</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.operator.pluto</string>
+							<string>keyword.operator.ternary.pluto</string>
 						</dict>
 					</dict>
 					<key>end</key>
@@ -368,7 +368,7 @@
 						<key>0</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.operator.pluto</string>
+							<string>keyword.operator.ternary.pluto</string>
 						</dict>
 					</dict>
 					<key>name</key>
@@ -519,7 +519,7 @@
 					<key>match</key>
 					<string>\b(and|or|not|instanceof)\b</string>
 					<key>name</key>
-					<string>keyword.operator.pluto</string>
+					<string>keyword.operator.logical.pluto</string>
 				</dict>
 				<dict>
 					<key>match</key>
@@ -537,7 +537,7 @@
 					<key>match</key>
 					<string>\+|-|%|#|\*|\/|\^|==?|~=|!=|&lt;=?|&gt;=?|(?&lt;!\.)\.{2}(?!\.)|\?\.?|\:=|\$|\||~</string>
 					<key>name</key>
-					<string>keyword.operator.pluto</string>
+					<string>keyword.operator.logical.pluto</string>
 				</dict>
 				<dict>
 					<key>match</key>
