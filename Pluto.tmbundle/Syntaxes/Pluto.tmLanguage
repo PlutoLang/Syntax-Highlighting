@@ -553,6 +553,13 @@
 					<string>punctuation.accessor.pluto</string>
 				</dict>
 				<dict>
+					<!-- For default & case -->
+					<key>match</key>
+					<string>:</string>
+					<key>name</key>
+					<string>punctuation.separator.colon.pluto</string>
+				</dict>
+				<dict>
 					<key>match</key>
 					<string>;</string>
 					<key>name</key>
