@@ -6,6 +6,10 @@ Search for `calamity-inc.pluto-syntax-highlighting` in the marketplace and press
 
 ## Sublime Text Installation
 
+Open the command palette (Ctrl+Shift+P), select "Package Control: Install Package", search for "Pluto", and press enter.
+
+## Development
+
 If you don't have Git installed, [do so first](https://github.com/git-guides/install-git).
 
 In Sublime Text, select **Preferences > Browse Packages...** to open the "Packages" folder of your ST installation.
