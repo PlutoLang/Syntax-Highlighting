@@ -10,6 +10,8 @@ end</string>
 	<string>function</string>
 	<key>tabTrigger</key>
 	<string>fun</string>
+	<key>scope</key>
+	<string>source.pluto</string>
 	<key>uuid</key>
 	<string>1291F8B1-087F-4B86-A9DB-CC3518969F40</string>
 </dict>
