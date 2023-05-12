@@ -1,7 +1,7 @@
 {
 	"name": "pluto-syntax-highlighting",
 	"displayName": "Pluto Syntax Highlighting",
-	"description": "Provides syntax highlighting and snippets for the Pluto language.",
+	"description": "Provides syntax highlighting and snippets for Pluto, a Lua dialect.",
 	"version": "0.3.3",
 	"publisher": "calamity-inc",
 	"icon": "icon.png",
