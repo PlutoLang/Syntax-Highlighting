@@ -17,7 +17,8 @@
 			{
 				"id": "pluto",
 				"aliases": ["Pluto"],
-				"extensions": [".pluto"]
+				"extensions": [".pluto"],
+				"configuration": "./language-config.json"
 			}
 		],
 		"grammars": [

@@ -4,5 +4,5 @@
 # Sublime Text Package
 Pluto.tmbundle/Snippets/*.code-snippets export-ignore
 *.png export-ignore
-package.json export-ignore
+*.json export-ignore
 visual-check.* export-ignore
