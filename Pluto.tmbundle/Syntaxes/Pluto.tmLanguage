@@ -741,6 +741,37 @@
 						</dict>
 					</array>
 				</dict>
+				<dict>
+					<key>begin</key>
+					<string>\[</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.section.destructuring.begin.pluto</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>\]</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.section.destructuring.end.pluto</string>
+						</dict>
+					</dict>
+					<key>name</key>
+					<string>meta.destructuring.pluto</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>#pluto</string>
+						</dict>
+					</array>
+				</dict>
 			</array>
 		</dict>
 		<key>string_inner</key>
