@@ -8,7 +8,7 @@
 		<string>lua</string>
 	</array>
 	<key>firstLineMatch</key>
-	<string>\A#!.*?\bpluto(\d+(\.\d+)?)?\b|\A--\s+-\*-\s*pluto\s*-\*-</string>
+	<string>\A#!.*?\bpluto(\d+(\.\d+)?)?\b|\A--\s+-\*-\s*pluto\s*-\*-|pluto_use</string>
 	<key>name</key>
 	<string>Pluto</string>
 	<key>patterns</key>
