@@ -9,8 +9,6 @@
 	</array>
 	<key>firstLineMatch</key>
 	<string>\A#!.*?\bpluto(\d+(\.\d+)?)?\b|\A--\s+-\*-\s*pluto\s*-\*-</string>
-	<key>keyEquivalent</key>
-	<string>^~L</string>
 	<key>name</key>
 	<string>Pluto</string>
 	<key>patterns</key>
