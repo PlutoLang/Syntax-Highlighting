@@ -196,7 +196,7 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.definition.string.begin.pluto</string>
+							<string>string.pluto punctuation.definition.string.begin.pluto</string>
 						</dict>
 					</dict>
 					<key>contentName</key>
@@ -213,7 +213,7 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.definition.string.end.pluto</string>
+							<string>string.pluto punctuation.definition.string.end.pluto</string>
 						</dict>
 					</dict>
 					<key>patterns</key>
@@ -638,7 +638,7 @@
 						<key>0</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.definition.string.begin.pluto</string>
+							<string>punctuation.definition.string.begin.pluto string.pluto</string>
 						</dict>
 					</dict>
 					<key>end</key>
@@ -648,16 +648,16 @@
 						<key>0</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.definition.string.end.pluto</string>
+							<string>punctuation.definition.string.end.pluto string.pluto</string>
 						</dict>
 					</dict>
 					<key>name</key>
-					<string>string.quoted.single.pluto</string>
+					<string>meta.string.quoted.single.pluto</string>
 					<key>patterns</key>
 					<array>
 						<dict>
 							<key>include</key>
-							<string>#escaped_char</string>
+							<string>#string_inner</string>
 						</dict>
 					</array>
 				</dict>
@@ -669,7 +669,7 @@
 						<key>0</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.definition.string.begin.pluto</string>
+							<string>string.pluto punctuation.definition.string.begin.pluto</string>
 						</dict>
 					</dict>
 					<key>end</key>
@@ -679,16 +679,16 @@
 						<key>0</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.definition.string.end.pluto</string>
+							<string>string.pluto punctuation.definition.string.end.pluto</string>
 						</dict>
 					</dict>
 					<key>name</key>
-					<string>string.quoted.double.pluto</string>
+					<string>meta.string.quoted.double.pluto</string>
 					<key>patterns</key>
 					<array>
 						<dict>
 							<key>include</key>
-							<string>#escaped_char</string>
+							<string>#string_inner</string>
 						</dict>
 					</array>
 				</dict>
@@ -725,10 +725,11 @@
 				</dict>
 			</array>
 		</dict>
-		<key>escaped_char</key>
+		<key>string_inner</key>
 		<dict>
 			<key>patterns</key>
 			<array>
+				<!-- escaped chars -->
 				<dict>
 					<key>match</key>
 					<string>\\[abfnrtvz\\"'\n]</string>
@@ -758,6 +759,45 @@
 					<string>\\.</string>
 					<key>name</key>
 					<string>invalid.illegal.character.escape.pluto</string>
+				</dict>
+				<!-- interpolation -->
+				<dict>
+					<key>begin</key>
+					<string>\{</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.section.interpolation.begin.pluto</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>\}</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.section.interpolation.end.pluto</string>
+						</dict>
+					</dict>
+					<key>name</key>
+					<string>meta.interpolation.pluto</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>#pluto</string>
+						</dict>
+					</array>
+				</dict>
+				<!-- string -->
+				<dict>
+					<key>match</key>
+					<string>[^'"{]+</string>
+					<key>name</key>
+					<string>string.pluto</string>
 				</dict>
 			</array>
 		</dict>
