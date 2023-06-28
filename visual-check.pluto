@@ -16,7 +16,7 @@ switch 3 do
 	case 3: break
 end
 
-function f(a: ?string = "Hello"): void end
+function f(a: ?string = "I say 'Hello'"): void end
 
 h?.name ?? "John"
 a ? b : c

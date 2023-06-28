@@ -659,6 +659,12 @@
 							<key>include</key>
 							<string>#string_inner</string>
 						</dict>
+						<dict>
+							<key>match</key>
+							<string>[^'{]+</string>
+							<key>name</key>
+							<string>string.pluto</string>
+						</dict>
 					</array>
 				</dict>
 				<dict>
@@ -689,6 +695,12 @@
 						<dict>
 							<key>include</key>
 							<string>#string_inner</string>
+						</dict>
+						<dict>
+							<key>match</key>
+							<string>[^"{]+</string>
+							<key>name</key>
+							<string>string.pluto</string>
 						</dict>
 					</array>
 				</dict>
@@ -791,13 +803,6 @@
 							<string>#pluto</string>
 						</dict>
 					</array>
-				</dict>
-				<!-- string -->
-				<dict>
-					<key>match</key>
-					<string>[^'"{]+</string>
-					<key>name</key>
-					<string>string.pluto</string>
 				</dict>
 			</array>
 		</dict>

@@ -16,7 +16,7 @@ switch (3) {
 	case 3: break;
 }
 
-function f(?string $a = "Hello"): void {}
+function f(?string $a = "I say 'Hello'"): void {}
 
 $h?->name ?? "John";
 $a ? $b : $c;
