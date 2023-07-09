@@ -481,6 +481,12 @@
 				</dict>
 				<dict>
 					<key>match</key>
+					<string>&lt;(const|constexpr|close)&gt;</string>
+					<key>name</key>
+					<string>storage.type.attribute.pluto</string>
+				</dict>
+				<dict>
+					<key>match</key>
 					<string>(?&lt;![^.]\.|:)\b(false|nil|true)\b|(?&lt;![.])\.\.\.(?!\.)</string>
 					<key>name</key>
 					<string>constant.language.pluto</string>
