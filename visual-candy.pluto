@@ -1,0 +1,22 @@
+pluto_use "0.6.0"
+
+enum EntityType begin
+	ENTITY_TYPE_HUMAN,
+	ENTITY_TYPE_FISH,
+end
+class Entity
+	function __construct(public type, public name: string)
+		assert(type in EntityType:vkmap())
+	end
+
+	function getGreeting()
+		switch self.type do
+			case ENTITY_TYPE_FISH:
+				return "Blub, blub, blub."
+		end
+		return $"Hello, I am {self.name}!"
+	end
+end
+local human = new Entity(ENTITY_TYPE_HUMAN, "John")
+print(human:getGreeting()) -- "Hello, I am John!"
+print(new Entity(ENTITY_TYPE_FISH, "Bubbles"):getGreeting()) -- "Blub, blub, blub."

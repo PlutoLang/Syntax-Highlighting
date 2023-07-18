@@ -6,3 +6,4 @@ Pluto.tmbundle/Snippets/*.code-snippets export-ignore
 *.png export-ignore
 *.json export-ignore
 visual-check.* export-ignore
+*.pluto export-ignore

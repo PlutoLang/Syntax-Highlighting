@@ -2,3 +2,4 @@ Pluto.tmbundle/info.plist
 Pluto.tmbundle/Snippets/**.tmSnippet
 .gitignore
 visual-check.*
+*.pluto
