@@ -689,6 +689,21 @@
 					<key>patterns</key>
 					<array>
 						<dict>
+							<key>begin</key>
+							<string>\n</string>
+							<key>end</key>
+							<string>(?=')</string>
+							<key>name</key>
+							<string>invalid.multiline-quoted-string.pluto</string>
+							<key>patterns</key>
+							<array>
+								<dict>
+									<key>include</key>
+									<string>#pluto</string>
+								</dict>
+							</array>
+						</dict>
+						<dict>
 							<key>include</key>
 							<string>#string_inner</string>
 						</dict>
@@ -725,6 +740,21 @@
 					<string>meta.string.quoted.double.pluto</string>
 					<key>patterns</key>
 					<array>
+						<dict>
+							<key>begin</key>
+							<string>\n</string>
+							<key>end</key>
+							<string>(?=")</string>
+							<key>name</key>
+							<string>invalid.multiline-quoted-string.pluto</string>
+							<key>patterns</key>
+							<array>
+								<dict>
+									<key>include</key>
+									<string>#pluto</string>
+								</dict>
+							</array>
+						</dict>
 						<dict>
 							<key>include</key>
 							<string>#string_inner</string>
