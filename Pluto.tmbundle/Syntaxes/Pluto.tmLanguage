@@ -694,7 +694,7 @@
 						</dict>
 						<dict>
 							<key>match</key>
-							<string>[^'{]+</string>
+							<string>[^']</string>
 							<key>name</key>
 							<string>string.pluto</string>
 						</dict>
@@ -731,7 +731,7 @@
 						</dict>
 						<dict>
 							<key>match</key>
-							<string>[^"{]+</string>
+							<string>[^"]</string>
 							<key>name</key>
 							<string>string.pluto</string>
 						</dict>
