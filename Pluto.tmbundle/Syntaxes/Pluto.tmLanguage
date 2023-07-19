@@ -26,7 +26,7 @@
 			<array>
 				<dict>
 					<key>begin</key>
-					<string>\b(function)\s*(?:[a-zA-Z_][a-zA-Z0-9_]*([\.:]))?([a-zA-Z_][a-zA-Z0-9_]*)?\s*(\()?</string>
+					<string>\b(function)\s*(?:[a-zA-Z_][a-zA-Z0-9_]*([\.:]))?([a-zA-Z_][a-zA-Z0-9_]*)?\s*(\()</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -145,6 +145,30 @@
 							<string>meta.default-arguments.pluto</string>
 						</dict>
 					</array>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\b(function)\s*(?:[a-zA-Z_][a-zA-Z0-9_]*([\.:]))?([a-zA-Z_][a-zA-Z0-9_]*)</string>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>storage.type.function.pluto</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.separator.parameter.pluto</string>
+						</dict>
+						<key>3</key>
+						<dict>
+							<key>name</key>
+							<string>entity.name.function.pluto</string>
+						</dict>
+					</dict>
+					<key>name</key>
+					<string>meta.function.incomplete.pluto</string>
 				</dict>
 				<dict>
 					<key>include</key>
