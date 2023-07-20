@@ -413,7 +413,7 @@
 					<key>name</key>
 					<string>meta.class.pluto</string>
 					<key>begin</key>
-					<string>\b((?&lt;!\.)(?&lt;!\:)(?:pluto_)?class)\s+((?!begin)(?!end)[a-zA-Z_][a-zA-Z0-9_]*)?</string>
+					<string>\b((?&lt;![.:])(?:pluto_)?class)\s+((?!begin)(?!end)[a-zA-Z_][a-zA-Z0-9_]*)?</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -528,7 +528,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(?&lt;!\.)(?&lt;!\:)(break|continue|do|else|for|if|elseif|goto|return|switch|pluto_switch|then|repeat|while|until|end|in|as|case|default|begin|pluto_use)\b</string>
+					<string>\b(?&lt;![.:])(break|continue|do|else|for|if|elseif|goto|return|switch|pluto_switch|then|repeat|while|until|end|in|as|case|default|begin|pluto_use)\b</string>
 					<key>name</key>
 					<string>keyword.control.pluto</string>
 				</dict>
