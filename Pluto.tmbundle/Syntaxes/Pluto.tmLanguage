@@ -440,10 +440,18 @@
 					<key>patterns</key>
 					<array>
 						<dict>
-							<key>match</key>
+							<key>begin</key>
 							<string>\b(public|private|protected)\b</string>
-							<key>name</key>
-							<string>storage.modifier.access.pluto</string>
+							<key>beginCaptures</key>
+							<dict>
+								<key>1</key>
+								<dict>
+									<key>name</key>
+									<string>storage.modifier.access.pluto</string>
+								</dict>
+							</dict>
+							<key>end</key>
+							<string>\w+</string>
 						</dict>
 						<dict>
 							<key>include</key>
