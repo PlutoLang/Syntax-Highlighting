@@ -520,7 +520,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(break|continue|do|else|for|if|elseif|goto|return|switch|pluto_switch|then|repeat|while|until|end|in|as|case|default|begin|pluto_use)\b</string>
+					<string>\b(?&lt;!\.)(?&lt;!\:)(break|continue|do|else|for|if|elseif|goto|return|switch|pluto_switch|then|repeat|while|until|end|in|as|case|default|begin|pluto_use)\b</string>
 					<key>name</key>
 					<string>keyword.control.pluto</string>
 				</dict>
