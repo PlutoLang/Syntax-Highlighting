@@ -571,7 +571,7 @@
 					<key>match</key>
 					<string>(?&lt;![^.]\.|:)\b(_G|_VERSION|_PVERSION|_PSOUP|math\.(pi|huge))\b</string>
 					<key>name</key>
-					<string>support.constant.builtin.pluto</string>
+					<string>constant.language.pluto support.constant.builtin.pluto</string>
 				</dict>
 				<dict>
 					<key>match</key>
