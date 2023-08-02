@@ -751,7 +751,104 @@
 						<key>0</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.definition.string.begin.pluto string.pluto</string>
+							<string>string.quoted.single.pluto punctuation.definition.string.begin.pluto</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>'</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>string.quoted.single.pluto punctuation.definition.string.end.pluto</string>
+						</dict>
+					</dict>
+					<key>name</key>
+					<string>string.quoted.single.pluto</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>begin</key>
+							<string>\n</string>
+							<key>end</key>
+							<string>(?=')</string>
+							<key>name</key>
+							<string>invalid.multiline-quoted-string.pluto</string>
+							<key>patterns</key>
+							<array>
+								<dict>
+									<key>include</key>
+									<string>#pluto</string>
+								</dict>
+							</array>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>#string_inner</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>begin</key>
+					<string>"</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>string.quoted.double.pluto punctuation.definition.string.begin.pluto</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>"</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>string.quoted.double.pluto punctuation.definition.string.end.pluto</string>
+						</dict>
+					</dict>
+					<key>name</key>
+					<string>string.quoted.double.pluto</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>begin</key>
+							<string>\n</string>
+							<key>end</key>
+							<string>(?=")</string>
+							<key>name</key>
+							<string>invalid.multiline-quoted-string.pluto</string>
+							<key>patterns</key>
+							<array>
+								<dict>
+									<key>include</key>
+									<string>#pluto</string>
+								</dict>
+							</array>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>#string_inner</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>begin</key>
+					<string>(\$)(')</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.operator.pluto</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>string.quoted.single.pluto punctuation.definition.string.begin.pluto</string>
 						</dict>
 					</dict>
 					<key>end</key>
@@ -765,7 +862,7 @@
 						</dict>
 					</dict>
 					<key>name</key>
-					<string>meta.string.quoted.single.pluto</string>
+					<string>meta.string.quoted.single.interpolation.pluto</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -788,22 +885,31 @@
 							<string>#string_inner</string>
 						</dict>
 						<dict>
+							<key>include</key>
+							<string>#string_interpolation</string>
+						</dict>
+						<dict>
 							<key>match</key>
 							<string>[^']</string>
 							<key>name</key>
-							<string>string.pluto</string>
+							<string>string.quoted.single.pluto</string>
 						</dict>
 					</array>
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>"</string>
+					<string>(\$)(")</string>
 					<key>beginCaptures</key>
 					<dict>
-						<key>0</key>
+						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>string.pluto punctuation.definition.string.begin.pluto</string>
+							<string>keyword.operator.pluto</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>string.quoted.double.pluto punctuation.definition.string.begin.pluto</string>
 						</dict>
 					</dict>
 					<key>end</key>
@@ -817,7 +923,7 @@
 						</dict>
 					</dict>
 					<key>name</key>
-					<string>meta.string.quoted.double.pluto</string>
+					<string>meta.string.quoted.double.interpolation.pluto</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -840,10 +946,14 @@
 							<string>#string_inner</string>
 						</dict>
 						<dict>
+							<key>include</key>
+							<string>#string_interpolation</string>
+						</dict>
+						<dict>
 							<key>match</key>
 							<string>[^"]</string>
 							<key>name</key>
-							<string>string.pluto</string>
+							<string>string.quoted.double.pluto</string>
 						</dict>
 					</array>
 				</dict>
@@ -915,37 +1025,37 @@
 					<key>name</key>
 					<string>invalid.illegal.character.escape.pluto</string>
 				</dict>
-				<!-- interpolation -->
+			</array>
+		</dict>
+		<key>string_interpolation</key>
+		<dict>
+			<key>begin</key>
+			<string>\{</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>0</key>
 				<dict>
-					<key>begin</key>
-					<string>\{</string>
-					<key>beginCaptures</key>
-					<dict>
-						<key>0</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.section.interpolation.begin.pluto</string>
-						</dict>
-					</dict>
-					<key>end</key>
-					<string>\}</string>
-					<key>endCaptures</key>
-					<dict>
-						<key>0</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.section.interpolation.end.pluto</string>
-						</dict>
-					</dict>
 					<key>name</key>
-					<string>meta.interpolation.pluto</string>
-					<key>patterns</key>
-					<array>
-						<dict>
-							<key>include</key>
-							<string>#pluto</string>
-						</dict>
-					</array>
+					<string>punctuation.section.interpolation.begin.pluto</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>\}</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.interpolation.end.pluto</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>meta.interpolation.pluto</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#pluto</string>
 				</dict>
 			</array>
 		</dict>
