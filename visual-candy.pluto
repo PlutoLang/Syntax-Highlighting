@@ -10,11 +10,10 @@ class Entity
 	end
 
 	function getGreeting()
-		switch self.type do
-			case ENTITY_TYPE_FISH:
-				return "Blub, blub, blub."
+		return switch self.type do
+			case ENTITY_TYPE_FISH -> "Blub, blub, blub."
+			default -> $"Hello, I am {self.name}!"
 		end
-		return $"Hello, I am {self.name}!"
 	end
 end
 local human = new Entity(ENTITY_TYPE_HUMAN, "John")
