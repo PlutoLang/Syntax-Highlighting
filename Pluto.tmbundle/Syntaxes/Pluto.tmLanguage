@@ -822,7 +822,7 @@
 					<array>
 						<dict>
 							<key>begin</key>
-							<string>\n</string>
+							<string>(?&lt;!\\z)\n</string>
 							<key>end</key>
 							<string>(?=')</string>
 							<key>name</key>
@@ -868,7 +868,7 @@
 					<array>
 						<dict>
 							<key>begin</key>
-							<string>\n</string>
+							<string>(?&lt;!\\z)\n</string>
 							<key>end</key>
 							<string>(?=")</string>
 							<key>name</key>

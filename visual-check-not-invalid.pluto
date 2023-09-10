@@ -1,0 +1,3 @@
+-- This is a valid way of doing multiline strings
+"hello\z
+world"
