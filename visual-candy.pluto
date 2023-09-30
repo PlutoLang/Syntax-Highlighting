@@ -6,7 +6,7 @@ enum EntityType begin
 end
 class Entity
 	function __construct(public type, public name: string)
-		assert(type in EntityType:vkmap())
+		assert(type in EntityType:kvmap())
 	end
 
 	function getGreeting()
