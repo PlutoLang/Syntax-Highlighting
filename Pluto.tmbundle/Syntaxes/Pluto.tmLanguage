@@ -767,15 +767,15 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>(?&lt;![\w\d.])0[xX][0-9A-Fa-f][0-9A-Fa-f_]*(?![pPeE.0-9])</string>
-					<key>name</key>
-					<string>constant.numeric.integer.hexadecimal.pluto</string>
-				</dict>
-				<dict>
-					<key>match</key>
 					<string>(?&lt;![\w\d.])0[xX][0-9A-Fa-f][0-9A-Fa-f_]*(\.[0-9A-Fa-f]+)?([eE]-?\d*)?([pP][-+]\d+)?</string>
 					<key>name</key>
 					<string>constant.numeric.float.hexadecimal.pluto</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>(?&lt;![\w\d.])0[xX][0-9A-Fa-f][0-9A-Fa-f_]*(?![pPeE.0-9])</string>
+					<key>name</key>
+					<string>constant.numeric.integer.hexadecimal.pluto</string>
 				</dict>
 				<dict>
 					<key>match</key>
