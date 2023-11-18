@@ -422,7 +422,7 @@
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>\?</string>
+					<string>\?(?!:)</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>0</key>
@@ -688,15 +688,39 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\+|-|%|#|\*|\/|\^|==?|~=|!=|&lt;=?|&gt;=?|(?&lt;!\.)\.{2}(?!\.)|\?\.?|\:=|\$|\||~|&amp;</string>
+					<string>\+|-|%|#|\*|\/|\^|==?|~=|!=|&lt;=?|&gt;=?|(?&lt;!\.)\.{2}(?!\.)|\:=|\$|\||~|&amp;</string>
 					<key>name</key>
 					<string>keyword.operator.logical.pluto</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(?:\.|:)\b</string>
+					<string>\b\.\b</string>
 					<key>name</key>
 					<string>punctuation.accessor.pluto</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\b(\??:)([a-zA-Z0-9_]+)(\??)</string>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.accessor.pluto</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>support.function.pluto</string>
+						</dict>
+						<key>3</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.accessor.pluto</string>
+						</dict>
+					</dict>
+					<key>name</key>
+					<string>meta.method-call.pluto</string>
 				</dict>
 				<dict>
 					<!-- For default & case -->
