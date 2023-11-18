@@ -455,7 +455,7 @@
 					<key>name</key>
 					<string>meta.class.pluto</string>
 					<key>begin</key>
-					<string>\b((?&lt;![.:])(?:pluto_)?class)\s+((?!begin)(?!end)[a-zA-Z_][a-zA-Z0-9_]*)?</string>
+					<string>\b((?&lt;![.:])(?:pluto_)?class)\s+(?!begin)(?!end)(?:[a-zA-Z_][a-zA-Z0-9_]*(\.))?([a-zA-Z_][a-zA-Z0-9_]*)?</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -464,6 +464,11 @@
 							<string>storage.type.class.pluto</string>
 						</dict>
 						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.separator.parameter.pluto</string>
+						</dict>
+						<key>3</key>
 						<dict>
 							<key>name</key>
 							<string>entity.name.type.class.pluto</string>
@@ -560,11 +565,16 @@
 						<key>2</key>
 						<dict>
 							<key>name</key>
+							<string>punctuation.separator.parameter.pluto</string>
+						</dict>
+						<key>3</key>
+						<dict>
+							<key>name</key>
 							<string>entity.other.inherited-class.pluto</string>
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>\b(extends)\s+([a-zA-Z_][a-zA-Z0-9_]*)?</string>
+					<string>\b(extends)\s+(?:[a-zA-Z_][a-zA-Z0-9_]*(\.))?([a-zA-Z_][a-zA-Z0-9_]*)?</string>
 					<key>name</key>
 					<string>meta.extends.pluto</string>
 				</dict>
@@ -579,11 +589,16 @@
 						<key>2</key>
 						<dict>
 							<key>name</key>
+							<string>punctuation.separator.parameter.pluto</string>
+						</dict>
+						<key>3</key>
+						<dict>
+							<key>name</key>
 							<string>support.class.pluto</string>
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>\b(new|pluto_new|instanceof)\s+([a-zA-Z_][a-zA-Z0-9_]*)?</string>
+					<string>\b(new|pluto_new|instanceof)\s+(?:[a-zA-Z_][a-zA-Z0-9_]*(\.))?([a-zA-Z_][a-zA-Z0-9_]*)?</string>
 					<key>name</key>
 					<string>meta.classoperator.pluto</string>
 				</dict>
