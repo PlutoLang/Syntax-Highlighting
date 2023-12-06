@@ -421,35 +421,16 @@
 					<string>meta.safe-navigation-array.pluto</string>
 				</dict>
 				<dict>
-					<key>begin</key>
+					<key>match</key>
 					<string>\?(?!:)</string>
-					<key>beginCaptures</key>
-					<dict>
-						<key>0</key>
-						<dict>
-							<key>name</key>
-							<string>keyword.operator.ternary.pluto</string>
-						</dict>
-					</dict>
-					<key>end</key>
-					<string>\:</string>
-					<key>endCaptures</key>
-					<dict>
-						<key>0</key>
-						<dict>
-							<key>name</key>
-							<string>keyword.operator.ternary.pluto</string>
-						</dict>
-					</dict>
 					<key>name</key>
-					<string>meta.ternary.pluto</string>
-					<key>patterns</key>
-					<array>
-						<dict>
-							<key>include</key>
-							<string>#pluto</string>
-						</dict>
-					</array>
+					<string>keyword.operator.ternary.pluto</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\:(?!\w)</string>
+					<key>name</key>
+					<string>keyword.operator.ternary.pluto</string>
 				</dict>
 				<dict>
 					<key>name</key>
