@@ -428,7 +428,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\:(?!\w)</string>
+					<string>(?&lt;=\s)\:(?!\w)</string>
 					<key>name</key>
 					<string>keyword.operator.ternary.pluto</string>
 				</dict>
