@@ -422,7 +422,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\?(?!:)</string>
+					<string>\?(?![:(])</string>
 					<key>name</key>
 					<string>keyword.operator.ternary.pluto</string>
 				</dict>
@@ -689,13 +689,6 @@
 					<string>variable.other.pluto</string>
 				</dict>
 				<dict>
-					<!-- For "default:" -->
-					<key>match</key>
-					<string>:</string>
-					<key>name</key>
-					<string>punctuation.separator.colon.pluto</string>
-				</dict>
-				<dict>
 					<!-- For "default ->" -->
 					<key>match</key>
 					<string>-&gt;</string>
@@ -737,6 +730,13 @@
 					</dict>
 					<key>name</key>
 					<string>meta.method-call.pluto</string>
+				</dict>
+				<dict>
+					<!-- For default & case -->
+					<key>match</key>
+					<string>:</string>
+					<key>name</key>
+					<string>punctuation.separator.colon.pluto</string>
 				</dict>
 				<dict>
 					<key>match</key>
