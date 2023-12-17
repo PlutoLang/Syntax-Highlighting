@@ -422,6 +422,12 @@
 				</dict>
 				<dict>
 					<key>match</key>
+					<string>\:?=|-&gt;</string>
+					<key>name</key>
+					<string>keyword.operator.assignment.pluto</string>
+				</dict>
+				<dict>
+					<key>match</key>
 					<string>\?(?![:(])</string>
 					<key>name</key>
 					<string>keyword.operator.ternary.pluto</string>
@@ -689,15 +695,8 @@
 					<string>variable.other.pluto</string>
 				</dict>
 				<dict>
-					<!-- For "default ->" -->
 					<key>match</key>
-					<string>-&gt;</string>
-					<key>name</key>
-					<string>punctuation.separator.arrow.pluto</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\+|-|%|#|\*|\/|\^|==?|~=|!=|&lt;=?|&gt;=?|(?&lt;!\.)\.{2}(?!\.)|\:=|\$|\||~|&amp;</string>
+					<string>\+|-|%|#|\*|\/|\^|==|~=|!=|&lt;=?|&gt;=?|(?&lt;!\.)\.{2}(?!\.)|\$|\||~|&amp;</string>
 					<key>name</key>
 					<string>keyword.operator.logical.pluto</string>
 				</dict>
