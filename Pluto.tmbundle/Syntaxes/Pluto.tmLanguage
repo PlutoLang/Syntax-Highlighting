@@ -217,41 +217,16 @@
 					<string>#simpleexp</string>
 				</dict>
 				<dict>
-					<key>begin</key>
-					<string>\b\(</string>
-					<key>beginCaptures</key>
-					<dict>
-						<key>0</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.section.group.begin.pluto</string>
-						</dict>
-					</dict>
-					<key>end</key>
-					<string>\)</string>
-					<key>endCaptures</key>
-					<dict>
-						<key>0</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.section.group.end.pluto</string>
-						</dict>
-					</dict>
+					<key>match</key>
+					<string>\(</string>
 					<key>name</key>
-					<string>meta.function-call.pluto</string>
-					<key>patterns</key>
-					<array>
-						<dict>
-							<key>match</key>
-							<string>,</string>
-							<key>name</key>
-							<string>punctuation.separator.comma.pluto</string>
-						</dict>
-						<dict>
-							<key>include</key>
-							<string>#pluto</string>
-						</dict>
-					</array>
+					<string>punctuation.section.group.begin.pluto</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\)</string>
+					<key>name</key>
+					<string>punctuation.section.group.end.pluto</string>
 				</dict>
 				<dict>
 					<key>begin</key>
