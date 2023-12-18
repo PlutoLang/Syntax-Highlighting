@@ -597,7 +597,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(?&lt;!\.)(local|let|const)\s+(?!class)(?!pluto_class)(?!function)(?:(and|break|do|else|elseif|end|false|for|function|goto|if|in|local|nil|not|or|repeat|pluto_use|pluto_switch|pluto_continue|pluto_enum|pluto_new|pluto_class|pluto_export|pluto_try|pluto_catch|switch|continue|enum|new|class|export|try|catch|return|then|true|until|while)|\w+)(?:\s*(:)\s+(\??(?:(?:string|number|int|float|bool(?:ean)?|function|table|userdata)\|)*(?:string|number|int|float|bool(?:ean)?|function|table|userdata)\??))?</string>
+					<string>\b(?&lt;!\.)(local|let|const)\s+(?!class)(?!pluto_class)(?!function)(?:(and|break|do|else|elseif|end|false|for|function|goto|if|in|local|nil|not|or|repeat|pluto_use|pluto_switch|pluto_continue|pluto_enum|pluto_new|pluto_class|pluto_export|pluto_try|pluto_catch|switch|continue|enum|new|class|export|try|catch|return|then|true|until|while)\b|\w+)(?:\s*(:)\s+(\??(?:(?:string|number|int|float|bool(?:ean)?|function|table|userdata)\|)*(?:string|number|int|float|bool(?:ean)?|function|table|userdata)\??))?</string>
 					<key>captures</key>
 					<dict>
 						<key>1</key>
