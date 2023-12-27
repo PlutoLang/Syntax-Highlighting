@@ -752,13 +752,13 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>(?&lt;![\w\d.])0[xX][0-9A-Fa-f][0-9A-Fa-f_]*(\.[0-9A-Fa-f]+)?([eE]-?\d*)?([pP][-+]\d+)?</string>
+					<string>(?&lt;![\w\d])0[xX][0-9A-Fa-f][0-9A-Fa-f_]*(\.[0-9A-Fa-f]+)?([eE]-?\d*)?([pP][-+]\d+)?</string>
 					<key>name</key>
 					<string>constant.numeric.float.hexadecimal.pluto</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(?&lt;![\w\d.])0[xX][0-9A-Fa-f][0-9A-Fa-f_]*(?![pPeE.0-9])</string>
+					<string>(?&lt;![\w\d])0[xX][0-9A-Fa-f][0-9A-Fa-f_]*(?![pPeE.0-9])</string>
 					<key>name</key>
 					<string>constant.numeric.integer.hexadecimal.pluto</string>
 				</dict>
@@ -770,13 +770,13 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(?&lt;![\w\d.])\d[0-9_]*(?![pPeE.0-9])</string>
+					<string>(?&lt;![\w\d])\d[0-9_]*(?![pPeE.0-9])</string>
 					<key>name</key>
 					<string>constant.numeric.integer.pluto</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(?&lt;![\w\d.])\d+(\.\d+)?([eE]-?\d*)?</string>
+					<string>(?&lt;![\w\d])\d+(\.\d+)?([eE]-?\d*)?</string>
 					<key>name</key>
 					<string>constant.numeric.float.pluto</string>
 				</dict>
