@@ -576,7 +576,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(?&lt;![^.]\.|:)\b(_G|_VERSION|_PVERSION|_PSOUP|math\.(pi|huge))\b</string>
+					<string>(?&lt;![^.]\.|:)\b(_G|_VERSION|_PVERSION|_PSOUP|math\.(pi|huge|mininteger|maxinteger))\b</string>
 					<key>name</key>
 					<string>constant.language.pluto support.constant.builtin.pluto</string>
 				</dict>
