@@ -1,12 +1,10 @@
 {
-	"fun": {
-		"prefix": "fun",
-		"body": "function ${1:function_name}( ${2:...} )\n\t${0:-- body}\nend",
-		"description": "function"
-	},
 	"function": {
+		"prefix": "fun",
+		"body": "function ${1:function_name}(${2:...})\n\t${3:-- body}\nend"
+	},
+	"function\u200B": {
 		"prefix": "function",
-		"body": "function ${1:function_name}( ${2:...} )\n\t${0:-- body}\nend",
-		"description": "function"
+		"body": "function ${1:function_name}(${2:...})\n\t${3:-- body}\nend"
 	}
 }
