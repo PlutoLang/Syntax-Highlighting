@@ -6,5 +6,13 @@
 	"function\u200B": {
 		"prefix": "function",
 		"body": "function ${1:function_name}(${2:...})\n\t${3:-- body}\nend"
+	},
+	"if/then/end": {
+		"prefix": "if",
+		"body": "if ${1:condition} then\n\t${2:-- body}\nend"
+	},
+	"while/do/end": {
+		"prefix": "while",
+		"body": "while ${1:condition} do\n\t${2:-- body}\nend"
 	}
 }

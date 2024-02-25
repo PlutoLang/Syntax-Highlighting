@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>if ${1:condition} then
+	${2:-- body}
+end</string>
+	<key>name</key>
+	<string>if/then/end</string>
+	<key>tabTrigger</key>
+	<string>if</string>
+	<key>scope</key>
+	<string>source.pluto</string>
+	<key>uuid</key>
+	<string>1291F8B1-087F-4B86-A9DB-CC3518969F40</string>
+</dict>
+</plist>
