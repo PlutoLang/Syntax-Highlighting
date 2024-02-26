@@ -51,7 +51,7 @@
 						</dict>
 					</dict>
 					<key>end</key>
-					<string>(\))(?:(:)\s+(void|\??(?:(?:string|number|int|float|bool(?:ean)?|function|table|userdata)\|)*(?:string|number|int|float|bool(?:ean)?|function|table|userdata)\??))?</string>
+					<string>(\))(?:(:)\s+(void|\??(?:(?:string|number|int|float|bool(?:ean)?|function|table|userdata)\|)*(?:string|number|int|float|bool(?:ean)?|function|table|userdata)\??))?(\s*&lt;nodiscard&gt;)?</string>
 					<key>endCaptures</key>
 					<dict>
 						<key>1</key>
@@ -68,6 +68,11 @@
 						<dict>
 							<key>name</key>
 							<string>storage.type.primitive.pluto</string>
+						</dict>
+						<key>4</key>
+						<dict>
+							<key>name</key>
+							<string>storage.type.attribute.pluto</string>
 						</dict>
 					</dict>
 					<key>name</key>
