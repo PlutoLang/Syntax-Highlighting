@@ -1,6 +1,6 @@
-Build Systems/**.sublime-build
 Pluto.tmbundle/info.plist
 Pluto.tmbundle/Snippets/**.tmSnippet
 .gitignore
+*.sublime-build
 visual-check.*
 *.pluto
