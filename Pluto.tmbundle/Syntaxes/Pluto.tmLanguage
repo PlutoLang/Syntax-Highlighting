@@ -293,10 +293,8 @@
 					<key>patterns</key>
 					<array>
 						<dict>
-							<key>match</key>
-							<string>\@(param|see|comment|usage|return|field|author|set|class|name|pragma|alias|copyright|summary|description|release|license|fixme|todo|warning|raise|charset|within|local|export|private|constructor|static|include|module|script|example|topic|submodule|classmod|file|function|lfunction|table|section|type|annotation|factory|pluto_warnings|pluto_use|fallthrough)</string>
-							<key>name</key>
-							<string>entity.name.tag.documentation.pluto</string>
+							<key>include</key>
+							<string>#annotations</string>
 						</dict>
 					</array>
 				</dict>
@@ -765,6 +763,13 @@
 					</dict>
 					<key>name</key>
 					<string>comment.block.pluto</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>#annotations</string>
+						</dict>
+					</array>
 				</dict>
 			</array>
 		</dict>
@@ -1121,6 +1126,18 @@
 				<dict>
 					<key>include</key>
 					<string>#pluto</string>
+				</dict>
+			</array>
+		</dict>
+		<key>annotations</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>\@(param|see|comment|usage|return|field|author|set|class|name|pragma|alias|copyright|summary|description|release|license|fixme|todo|warning|raise|charset|within|local|export|private|constructor|static|include|module|script|example|topic|submodule|classmod|file|function|lfunction|table|section|type|annotation|factory|pluto_warnings|pluto_use|fallthrough)</string>
+					<key>name</key>
+					<string>entity.name.tag.documentation.pluto</string>
 				</dict>
 			</array>
 		</dict>
