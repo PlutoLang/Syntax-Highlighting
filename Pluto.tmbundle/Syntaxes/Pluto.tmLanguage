@@ -356,6 +356,12 @@
 				</dict>
 				<dict>
 					<key>match</key>
+					<string>\+|-|%|#|\*|\/|\^|==|~=|!=|&lt;=?|&gt;=?|(?&lt;!\.)\.{2}(?!\.)|\$|\||~|&amp;</string>
+					<key>name</key>
+					<string>keyword.operator.logical.pluto</string>
+				</dict>
+				<dict>
+					<key>match</key>
 					<string>\:?=|-&gt;</string>
 					<key>name</key>
 					<string>keyword.operator.assignment.pluto</string>
@@ -627,12 +633,6 @@
 					<string>(?&lt;=[^.]\.|:)\b([a-zA-Z_][a-zA-Z0-9_]*)</string>
 					<key>name</key>
 					<string>variable.other.pluto</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\+|-|%|#|\*|\/|\^|==|~=|!=|&lt;=?|&gt;=?|(?&lt;!\.)\.{2}(?!\.)|\$|\||~|&amp;</string>
-					<key>name</key>
-					<string>keyword.operator.logical.pluto</string>
 				</dict>
 				<dict>
 					<key>match</key>
