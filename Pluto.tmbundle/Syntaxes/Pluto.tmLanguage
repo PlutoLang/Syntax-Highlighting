@@ -272,7 +272,7 @@
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>--</string>
+					<string>--&gt;?</string> <!-- Capturing an optional > for ligatures of this: -->
 					<key>beginCaptures</key>
 					<dict>
 						<key>0</key>
