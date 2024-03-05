@@ -356,6 +356,12 @@
 				</dict>
 				<dict>
 					<key>match</key>
+					<string>&lt;(const|constexpr|close)&gt;</string>
+					<key>name</key>
+					<string>storage.type.attribute.pluto</string>
+				</dict>
+				<dict>
+					<key>match</key>
 					<string>\+|-|%|#|\*|\/|\^|==|~=|!=|&lt;=?|&gt;=?|(?&lt;!\.)\.{2}(?!\.)|\$|\||~|&amp;</string>
 					<key>name</key>
 					<string>keyword.operator.logical.pluto</string>
@@ -567,12 +573,6 @@
 					<string>\b(?&lt;![\.\:])(local|let|const|static|export|pluto_export)\b</string>
 					<key>name</key>
 					<string>storage.modifier.pluto</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>&lt;(const|constexpr|close)&gt;</string>
-					<key>name</key>
-					<string>storage.type.attribute.pluto</string>
 				</dict>
 				<dict>
 					<key>match</key>
