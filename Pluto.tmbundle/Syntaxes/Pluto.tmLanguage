@@ -606,7 +606,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(coroutine|package|string|utf8|table|math|io|os|debug)\b</string>
+					<string>\b(?&lt;![.:])(coroutine|package|string|utf8|table|math|io|os|debug)\b</string>
 					<key>name</key>
 					<string>support.function.library.pluto</string>
 				</dict>
