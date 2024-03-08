@@ -26,7 +26,7 @@
 			<array>
 				<dict>
 					<key>begin</key>
-					<string>\b(function)(?:\s+(?:[a-zA-Z_][a-zA-Z0-9_]*([\.:]))?([a-zA-Z_][a-zA-Z0-9_]*))?\s*(\()</string>
+					<string>\b(function)(?:\s+(?:[a-zA-Z_][a-zA-Z0-9_]*([.:]))?([a-zA-Z_][a-zA-Z0-9_]*))?\s*(\()</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -153,7 +153,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(function)($|\s+)(?:[a-zA-Z_][a-zA-Z0-9_]*([\.:]))?([a-zA-Z_][a-zA-Z0-9_]*)?</string>
+					<string>\b(function)($|\s+)(?:[a-zA-Z_][a-zA-Z0-9_]*([.:]))?([a-zA-Z_][a-zA-Z0-9_]*)?</string>
 					<key>captures</key>
 					<dict>
 						<key>1</key>
@@ -551,7 +551,7 @@
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>\b(?&lt;![\.:])(new|pluto_new|instanceof)\s+(?:[a-zA-Z_][a-zA-Z0-9_]*(\.))?([a-zA-Z_][a-zA-Z0-9_]*)?</string>
+					<string>\b(?&lt;![.:])(new|pluto_new|instanceof)\s+(?:[a-zA-Z_][a-zA-Z0-9_]*(\.))?([a-zA-Z_][a-zA-Z0-9_]*)?</string>
 					<key>name</key>
 					<string>meta.classoperator.pluto</string>
 				</dict>
@@ -590,7 +590,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(?&lt;![\.\:])(local|global|static|export|pluto_export)\b</string>
+					<string>\b(?&lt;![.\:])(local|global|static|export|pluto_export)\b</string>
 					<key>name</key>
 					<string>storage.modifier.pluto</string>
 				</dict>
