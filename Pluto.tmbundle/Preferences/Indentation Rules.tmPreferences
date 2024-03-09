@@ -8,7 +8,7 @@
 			<key>increaseIndentPattern</key>
 			<string>(^\s*\b(((local)?[\s\w=]+)?function|repeat|else|elseif|if|while|class|pluto_class|enum|pluto_enum)\b((?!\bend\b).)*$|^.*\b(do|then)\b((?!\bend\b).)*$|^.*\{((?!\}).)*$)</string>
 			<key>decreaseIndentPattern</key>
-			<string>(^\s*\b(elsei|elseif|else|end|until)\b.*$|^((?!\{).)*\}\;?.*$)</string>
+			<string>(^\s*\$?\b(elsei|elseif|else|end|until)\b.*$|^((?!\{).)*\}\;?.*$)</string>
 		</dict>
 	</dict>
 </plist>
