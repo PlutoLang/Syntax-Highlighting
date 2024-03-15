@@ -381,9 +381,15 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>&lt;(const|constexpr|close)&gt;</string>
+					<string>&lt;(const|close)&gt;</string>
 					<key>name</key>
 					<string>storage.type.attribute.pluto</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\$define\b</string>
+					<key>name</key>
+					<string>storage.modifier.pluto</string>
 				</dict>
 				<dict>
 					<key>match</key>
