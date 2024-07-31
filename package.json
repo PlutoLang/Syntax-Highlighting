@@ -3,7 +3,7 @@
 	"displayName": "Pluto Syntax Highlighting",
 	"description": "Provides syntax highlighting and snippets for Pluto, a Lua dialect.",
 	"keywords": ["Pluto language"],
-	"version": "0.6.1",
+	"version": "0.6.2",
 	"publisher": "calamity-inc",
 	"icon": "icon.png",
 	"repository": "https://github.com/PlutoLang/Syntax-Highlighting",
