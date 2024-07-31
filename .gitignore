@@ -1,6 +1,0 @@
-# JS Bloat
-node_modules/
-package-lock.json
-
-# Packed VSC Extension
-*.vsix
