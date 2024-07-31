@@ -2,6 +2,7 @@
 *.pluto linguist-language=Lua
 
 # Sublime Text Package
+.vscodeignore export-ignore
 Pluto.tmbundle/Snippets/*.code-snippets export-ignore
 *.png export-ignore
 *.json export-ignore
