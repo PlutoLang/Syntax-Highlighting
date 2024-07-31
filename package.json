@@ -21,8 +21,8 @@
 				"extensions": [".pluto"],
 				"configuration": "./language-config.json",
 				"icon": {
-					"light": "fileicon-light.png",
-					"dark": "fileicon-dark.png"
+					"light": "icon.png",
+					"dark": "icon.png"
 				}
 			}
 		],
