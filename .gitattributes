@@ -1,5 +1,6 @@
 ** linguist-detectable
-*.pluto linguist-language=Lua
+*.pluto -linguist-detectable
+*.php -linguist-detectable
 
 # Sublime Text Package
 .vscodeignore export-ignore
