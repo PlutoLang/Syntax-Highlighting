@@ -7,3 +7,4 @@ Pluto.tmbundle/Snippets/*.code-snippets export-ignore
 *.json export-ignore
 visual-check.* export-ignore
 *.pluto export-ignore
+*.js export-ignore
