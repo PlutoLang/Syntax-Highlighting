@@ -19,7 +19,11 @@
 				"id": "pluto",
 				"aliases": ["Pluto"],
 				"extensions": [".pluto"],
-				"configuration": "./language-config.json"
+				"configuration": "./language-config.json",
+				"icon": {
+					"light": "fileicon-light.png",
+					"dark": "fileicon-dark.png"
+				}
 			}
 		],
 		"grammars": [
