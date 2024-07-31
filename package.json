@@ -38,8 +38,23 @@
 				"language": "pluto",
 				"path": "./Pluto.tmbundle/Snippets/_vscode.code-snippets"
 			}
+		],
+		"commands": [
+			{
+				"command": "pluto-syntax-highlighting.run",
+				"title": "Pluto: Run Script"
+			},
+			{
+				"command": "pluto-syntax-highlighting.lint",
+				"title": "Pluto: Lint Script"
+			}
 		]
 	},
+	"main": "vs-code-circus.js",
+	"activationEvents": [
+		"onCommand:pluto-syntax-highlighting.run",
+		"onCommand:pluto-syntax-highlighting.lint"
+	],
 	"devDependencies": {
 		"vscode-grammar-updater": "^1.1.0"
 	}
