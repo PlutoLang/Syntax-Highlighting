@@ -1,12 +1,6 @@
 # Pluto Syntax Highlighting
 
-## VS Code Installation
-
-Search for `calamity-inc.pluto-syntax-highlighting` in the marketplace and press "Install."
-
-## Sublime Text Installation
-
-Open the command palette (Ctrl+Shift+P), select "Package Control: Install Package", search for "Pluto", and press enter.
+For information regarding the installation, features, & usage of this editor integration, [have a look at our documentation](https://plutolang.github.io/docs/Editor%20Integration).
 
 ## Development
 
