@@ -1,0 +1,4 @@
+# VSIX
+.vs/
+bin/
+obj/

@@ -4,3 +4,11 @@ Pluto.tmbundle/Snippets/**.tmSnippet
 *.sublime-build
 visual-check.*
 *.pluto
+
+# VSIX
+.vs/
+bin/
+obj/
+*.pkgdef
+*.csproj
+*.sln

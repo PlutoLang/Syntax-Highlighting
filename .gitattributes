@@ -3,6 +3,9 @@
 *.php -linguist-detectable
 
 # Sublime Text Package
+.vs/ export-ignore
+bin/ export-ignore
+obj/ export-ignore
 .vscodeignore export-ignore
 Pluto.tmbundle/Snippets/*.code-snippets export-ignore
 *.png export-ignore
@@ -10,3 +13,6 @@ Pluto.tmbundle/Snippets/*.code-snippets export-ignore
 visual-check.* export-ignore
 *.pluto export-ignore
 *.js export-ignore
+*.pkgdef export-ignore
+*.csproj export-ignore
+*.sln export-ignore

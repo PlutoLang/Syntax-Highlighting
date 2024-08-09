@@ -1,0 +1,13 @@
+﻿; Registering the package
+[$RootKey$\InstalledProducts\Pluto_VSXPackage]
+"Package"="{67756f91-bf5a-467e-9d62-2737110b94f0}"
+[$RootKey$\BindingPaths\{67756f91-bf5a-467e-9d62-2737110b94f0}]
+"$PackageFolder$"=""
+
+; Registering the TextMate grammar
+[$RootKey$\TextMate\Repositories]
+"Pluto_VSX"="$PackageFolder$\Pluto.tmbundle\Syntaxes"
+
+; Match file extensions with icons. See full icon list at https://glyphlist.azurewebsites.net/knownmonikers/
+[$RootKey$\ShellFileAssociations\.pluto]
+"DefaultIconMoniker"="KnownMonikers.EditorConfigFile"
