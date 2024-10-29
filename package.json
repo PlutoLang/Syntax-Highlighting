@@ -54,8 +54,5 @@
 	"activationEvents": [
 		"onCommand:pluto-syntax-highlighting.run",
 		"onCommand:pluto-syntax-highlighting.lint"
-	],
-	"devDependencies": {
-		"vscode-grammar-updater": "^1.1.0"
-	}
+	]
 }
