@@ -428,7 +428,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\$define\b</string>
+					<string>\$(define|alias)\b</string>
 					<key>name</key>
 					<string>storage.modifier.pluto</string>
 				</dict>
