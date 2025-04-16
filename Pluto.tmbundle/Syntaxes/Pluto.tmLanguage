@@ -642,7 +642,13 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(?&lt;![.\:])(local|global|static|export|pluto_export)\b</string>
+					<string>\b(?&lt;![.\:])(local|global|export|pluto_export)\b</string>
+					<key>name</key>
+					<string>storage.modifier.pluto</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\b(?&lt;![.\:])(static)(?!\s*\()\b</string>
 					<key>name</key>
 					<string>storage.modifier.pluto</string>
 				</dict>
