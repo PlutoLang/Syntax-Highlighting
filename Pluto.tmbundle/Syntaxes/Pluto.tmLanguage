@@ -159,7 +159,7 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>storage.modifier.preprocessoralias.pluto</string>
+							<string>storage.modifier.function.preprocessoralias.pluto</string>
 						</dict>
 						<key>2</key>
 						<dict>
@@ -169,7 +169,7 @@
 						<key>3</key>
 						<dict>
 							<key>name</key>
-							<string>entity.name.preprocessoralias.pluto</string>
+							<string>entity.name.function.preprocessoralias.pluto</string>
 						</dict>
 						<key>4</key>
 						<dict>
