@@ -1,0 +1,1347 @@
+[
+  [
+    {
+      "startIndex": 0,
+      "endIndex": 1,
+      "scopes": [
+        "source.pluto"
+      ]
+    }
+  ],
+  [
+    {
+      "startIndex": 0,
+      "endIndex": 5,
+      "scopes": [
+        "source.pluto",
+        "meta.class.pluto",
+        "storage.type.class.pluto"
+      ]
+    },
+    {
+      "startIndex": 5,
+      "endIndex": 6,
+      "scopes": [
+        "source.pluto",
+        "meta.class.pluto"
+      ]
+    },
+    {
+      "startIndex": 6,
+      "endIndex": 11,
+      "scopes": [
+        "source.pluto",
+        "meta.class.pluto",
+        "entity.name.type.class.pluto"
+      ]
+    },
+    {
+      "startIndex": 11,
+      "endIndex": 12,
+      "scopes": [
+        "source.pluto",
+        "meta.class.pluto"
+      ]
+    },
+    {
+      "startIndex": 12,
+      "endIndex": 19,
+      "scopes": [
+        "source.pluto",
+        "meta.class.pluto",
+        "meta.extends.pluto",
+        "storage.modifier.extends.pluto"
+      ]
+    },
+    {
+      "startIndex": 19,
+      "endIndex": 20,
+      "scopes": [
+        "source.pluto",
+        "meta.class.pluto",
+        "meta.extends.pluto"
+      ]
+    },
+    {
+      "startIndex": 20,
+      "endIndex": 26,
+      "scopes": [
+        "source.pluto",
+        "meta.class.pluto",
+        "meta.extends.pluto",
+        "entity.other.inherited-class.pluto"
+      ]
+    }
+  ],
+  [
+    {
+      "startIndex": 0,
+      "endIndex": 1,
+      "scopes": [
+        "source.pluto",
+        "meta.class.pluto"
+      ]
+    },
+    {
+      "startIndex": 1,
+      "endIndex": 7,
+      "scopes": [
+        "source.pluto",
+        "meta.class.pluto",
+        "storage.modifier.pluto"
+      ]
+    },
+    {
+      "startIndex": 7,
+      "endIndex": 8,
+      "scopes": [
+        "source.pluto",
+        "meta.class.pluto"
+      ]
+    },
+    {
+      "startIndex": 8,
+      "endIndex": 16,
+      "scopes": [
+        "source.pluto",
+        "meta.class.pluto",
+        "meta.function.pluto",
+        "storage.type.function.pluto"
+      ]
+    },
+    {
+      "startIndex": 16,
+      "endIndex": 17,
+      "scopes": [
+        "source.pluto",
+        "meta.class.pluto",
+        "meta.function.pluto"
+      ]
+    },
+    {
+      "startIndex": 17,
+      "endIndex": 25,
+      "scopes": [
+        "source.pluto",
+        "meta.class.pluto",
+        "meta.function.pluto",
+        "entity.name.function.pluto"
+      ]
+    },
+    {
+      "startIndex": 25,
+      "endIndex": 26,
+      "scopes": [
+        "source.pluto",
+        "meta.class.pluto",
+        "meta.function.pluto",
+        "punctuation.section.group.begin.pluto"
+      ]
+    },
+    {
+      "startIndex": 26,
+      "endIndex": 27,
+      "scopes": [
+        "source.pluto",
+        "meta.class.pluto",
+        "meta.function.pluto",
+        "punctuation.section.group.end.pluto"
+      ]
+    }
+  ],
+  [
+    {
+      "startIndex": 0,
+      "endIndex": 1,
+      "scopes": [
+        "source.pluto",
+        "meta.class.pluto"
+      ]
+    },
+    {
+      "startIndex": 1,
+      "endIndex": 4,
+      "scopes": [
+        "source.pluto",
+        "meta.class.pluto",
+        "keyword.control.pluto"
+      ]
+    }
+  ],
+  [
+    {
+      "startIndex": 0,
+      "endIndex": 3,
+      "scopes": [
+        "source.pluto",
+        "keyword.control.pluto"
+      ]
+    }
+  ],
+  [
+    {
+      "startIndex": 0,
+      "endIndex": 5,
+      "scopes": [
+        "source.pluto",
+        "storage.modifier.pluto"
+      ]
+    },
+    {
+      "startIndex": 5,
+      "endIndex": 7,
+      "scopes": [
+        "source.pluto"
+      ]
+    },
+    {
+      "startIndex": 7,
+      "endIndex": 8,
+      "scopes": [
+        "source.pluto"
+      ]
+    },
+    {
+      "startIndex": 8,
+      "endIndex": 9,
+      "scopes": [
+        "source.pluto",
+        "keyword.operator.assignment.pluto"
+      ]
+    },
+    {
+      "startIndex": 9,
+      "endIndex": 10,
+      "scopes": [
+        "source.pluto"
+      ]
+    },
+    {
+      "startIndex": 10,
+      "endIndex": 13,
+      "scopes": [
+        "source.pluto",
+        "meta.classoperator.pluto",
+        "keyword.control.pluto"
+      ]
+    },
+    {
+      "startIndex": 13,
+      "endIndex": 14,
+      "scopes": [
+        "source.pluto",
+        "meta.classoperator.pluto"
+      ]
+    },
+    {
+      "startIndex": 14,
+      "endIndex": 19,
+      "scopes": [
+        "source.pluto",
+        "meta.classoperator.pluto",
+        "support.class.pluto"
+      ]
+    },
+    {
+      "startIndex": 19,
+      "endIndex": 20,
+      "scopes": [
+        "source.pluto",
+        "punctuation.section.group.begin.pluto"
+      ]
+    },
+    {
+      "startIndex": 20,
+      "endIndex": 21,
+      "scopes": [
+        "source.pluto",
+        "constant.numeric.integer.pluto"
+      ]
+    },
+    {
+      "startIndex": 21,
+      "endIndex": 22,
+      "scopes": [
+        "source.pluto"
+      ]
+    },
+    {
+      "startIndex": 22,
+      "endIndex": 23,
+      "scopes": [
+        "source.pluto",
+        "keyword.operator.logical.pluto"
+      ]
+    },
+    {
+      "startIndex": 23,
+      "endIndex": 24,
+      "scopes": [
+        "source.pluto"
+      ]
+    },
+    {
+      "startIndex": 24,
+      "endIndex": 25,
+      "scopes": [
+        "source.pluto",
+        "constant.numeric.integer.pluto"
+      ]
+    },
+    {
+      "startIndex": 25,
+      "endIndex": 26,
+      "scopes": [
+        "source.pluto",
+        "punctuation.section.group.end.pluto"
+      ]
+    },
+    {
+      "startIndex": 26,
+      "endIndex": 27,
+      "scopes": [
+        "source.pluto",
+        "punctuation.terminator.pluto"
+      ]
+    }
+  ],
+  [
+    {
+      "startIndex": 0,
+      "endIndex": 5,
+      "scopes": [
+        "source.pluto",
+        "support.function.pluto"
+      ]
+    },
+    {
+      "startIndex": 5,
+      "endIndex": 6,
+      "scopes": [
+        "source.pluto",
+        "punctuation.section.group.begin.pluto"
+      ]
+    },
+    {
+      "startIndex": 6,
+      "endIndex": 7,
+      "scopes": [
+        "source.pluto"
+      ]
+    },
+    {
+      "startIndex": 7,
+      "endIndex": 8,
+      "scopes": [
+        "source.pluto",
+        "punctuation.accessor.pluto"
+      ]
+    },
+    {
+      "startIndex": 8,
+      "endIndex": 12,
+      "scopes": [
+        "source.pluto",
+        "variable.other.pluto"
+      ]
+    },
+    {
+      "startIndex": 12,
+      "endIndex": 13,
+      "scopes": [
+        "source.pluto"
+      ]
+    },
+    {
+      "startIndex": 13,
+      "endIndex": 15,
+      "scopes": [
+        "source.pluto",
+        "keyword.operator.logical.pluto"
+      ]
+    },
+    {
+      "startIndex": 15,
+      "endIndex": 16,
+      "scopes": [
+        "source.pluto"
+      ]
+    },
+    {
+      "startIndex": 16,
+      "endIndex": 17,
+      "scopes": [
+        "source.pluto",
+        "string.quoted.double.pluto",
+        "string.quoted.double.pluto",
+        "punctuation.definition.string.begin.pluto"
+      ]
+    },
+    {
+      "startIndex": 17,
+      "endIndex": 19,
+      "scopes": [
+        "source.pluto",
+        "string.quoted.double.pluto",
+        "constant.character.escape.pluto"
+      ]
+    },
+    {
+      "startIndex": 19,
+      "endIndex": 20,
+      "scopes": [
+        "source.pluto",
+        "string.quoted.double.pluto",
+        "string.quoted.double.pluto",
+        "punctuation.definition.string.end.pluto"
+      ]
+    },
+    {
+      "startIndex": 20,
+      "endIndex": 21,
+      "scopes": [
+        "source.pluto",
+        "punctuation.section.group.end.pluto"
+      ]
+    },
+    {
+      "startIndex": 21,
+      "endIndex": 22,
+      "scopes": [
+        "source.pluto",
+        "punctuation.terminator.pluto"
+      ]
+    }
+  ],
+  [
+    {
+      "startIndex": 0,
+      "endIndex": 1,
+      "scopes": [
+        "source.pluto"
+      ]
+    },
+    {
+      "startIndex": 1,
+      "endIndex": 2,
+      "scopes": [
+        "source.pluto",
+        "meta.method-call.pluto",
+        "punctuation.accessor.pluto"
+      ]
+    },
+    {
+      "startIndex": 2,
+      "endIndex": 10,
+      "scopes": [
+        "source.pluto",
+        "meta.method-call.pluto",
+        "support.function.pluto"
+      ]
+    },
+    {
+      "startIndex": 10,
+      "endIndex": 11,
+      "scopes": [
+        "source.pluto",
+        "punctuation.section.group.begin.pluto"
+      ]
+    },
+    {
+      "startIndex": 11,
+      "endIndex": 12,
+      "scopes": [
+        "source.pluto",
+        "punctuation.section.group.end.pluto"
+      ]
+    }
+  ],
+  [
+    {
+      "startIndex": 0,
+      "endIndex": 1,
+      "scopes": [
+        "source.pluto"
+      ]
+    }
+  ],
+  [
+    {
+      "startIndex": 0,
+      "endIndex": 4,
+      "scopes": [
+        "source.pluto",
+        "meta.enum.pluto",
+        "storage.type.enum.pluto"
+      ]
+    },
+    {
+      "startIndex": 4,
+      "endIndex": 5,
+      "scopes": [
+        "source.pluto",
+        "meta.enum.pluto"
+      ]
+    },
+    {
+      "startIndex": 5,
+      "endIndex": 10,
+      "scopes": [
+        "source.pluto",
+        "meta.enum.pluto",
+        "keyword.control.pluto"
+      ]
+    },
+    {
+      "startIndex": 10,
+      "endIndex": 11,
+      "scopes": [
+        "source.pluto"
+      ]
+    },
+    {
+      "startIndex": 11,
+      "endIndex": 14,
+      "scopes": [
+        "source.pluto",
+        "keyword.control.pluto"
+      ]
+    }
+  ],
+  [
+    {
+      "startIndex": 0,
+      "endIndex": 4,
+      "scopes": [
+        "source.pluto",
+        "meta.enum.pluto",
+        "storage.type.enum.pluto"
+      ]
+    },
+    {
+      "startIndex": 4,
+      "endIndex": 5,
+      "scopes": [
+        "source.pluto",
+        "meta.enum.pluto"
+      ]
+    },
+    {
+      "startIndex": 5,
+      "endIndex": 9,
+      "scopes": [
+        "source.pluto",
+        "meta.enum.pluto",
+        "entity.name.type.enum.pluto"
+      ]
+    },
+    {
+      "startIndex": 9,
+      "endIndex": 10,
+      "scopes": [
+        "source.pluto",
+        "meta.enum.pluto"
+      ]
+    },
+    {
+      "startIndex": 10,
+      "endIndex": 15,
+      "scopes": [
+        "source.pluto",
+        "meta.enum.pluto",
+        "keyword.control.pluto"
+      ]
+    },
+    {
+      "startIndex": 15,
+      "endIndex": 16,
+      "scopes": [
+        "source.pluto"
+      ]
+    },
+    {
+      "startIndex": 16,
+      "endIndex": 19,
+      "scopes": [
+        "source.pluto",
+        "keyword.control.pluto"
+      ]
+    }
+  ],
+  [
+    {
+      "startIndex": 0,
+      "endIndex": 10,
+      "scopes": [
+        "source.pluto",
+        "meta.enum.pluto",
+        "storage.type.enum.pluto"
+      ]
+    },
+    {
+      "startIndex": 10,
+      "endIndex": 11,
+      "scopes": [
+        "source.pluto",
+        "meta.enum.pluto"
+      ]
+    },
+    {
+      "startIndex": 11,
+      "endIndex": 18,
+      "scopes": [
+        "source.pluto",
+        "meta.enum.pluto",
+        "entity.name.type.enum.pluto"
+      ]
+    },
+    {
+      "startIndex": 18,
+      "endIndex": 19,
+      "scopes": [
+        "source.pluto",
+        "meta.enum.pluto"
+      ]
+    },
+    {
+      "startIndex": 19,
+      "endIndex": 24,
+      "scopes": [
+        "source.pluto",
+        "meta.enum.pluto",
+        "keyword.control.pluto"
+      ]
+    },
+    {
+      "startIndex": 24,
+      "endIndex": 25,
+      "scopes": [
+        "source.pluto"
+      ]
+    },
+    {
+      "startIndex": 25,
+      "endIndex": 28,
+      "scopes": [
+        "source.pluto",
+        "keyword.control.pluto"
+      ]
+    }
+  ],
+  [
+    {
+      "startIndex": 0,
+      "endIndex": 1,
+      "scopes": [
+        "source.pluto"
+      ]
+    }
+  ],
+  [
+    {
+      "startIndex": 0,
+      "endIndex": 6,
+      "scopes": [
+        "source.pluto",
+        "keyword.control.pluto"
+      ]
+    },
+    {
+      "startIndex": 6,
+      "endIndex": 7,
+      "scopes": [
+        "source.pluto"
+      ]
+    },
+    {
+      "startIndex": 7,
+      "endIndex": 8,
+      "scopes": [
+        "source.pluto",
+        "constant.numeric.integer.pluto"
+      ]
+    },
+    {
+      "startIndex": 8,
+      "endIndex": 9,
+      "scopes": [
+        "source.pluto"
+      ]
+    },
+    {
+      "startIndex": 9,
+      "endIndex": 11,
+      "scopes": [
+        "source.pluto",
+        "keyword.control.pluto"
+      ]
+    }
+  ],
+  [
+    {
+      "startIndex": 0,
+      "endIndex": 1,
+      "scopes": [
+        "source.pluto"
+      ]
+    },
+    {
+      "startIndex": 1,
+      "endIndex": 8,
+      "scopes": [
+        "source.pluto",
+        "keyword.control.pluto"
+      ]
+    },
+    {
+      "startIndex": 8,
+      "endIndex": 9,
+      "scopes": [
+        "source.pluto",
+        "punctuation.separator.colon.pluto"
+      ]
+    }
+  ],
+  [
+    {
+      "startIndex": 0,
+      "endIndex": 1,
+      "scopes": [
+        "source.pluto"
+      ]
+    },
+    {
+      "startIndex": 1,
+      "endIndex": 5,
+      "scopes": [
+        "source.pluto",
+        "keyword.control.pluto"
+      ]
+    },
+    {
+      "startIndex": 5,
+      "endIndex": 6,
+      "scopes": [
+        "source.pluto"
+      ]
+    },
+    {
+      "startIndex": 6,
+      "endIndex": 7,
+      "scopes": [
+        "source.pluto",
+        "constant.numeric.integer.pluto"
+      ]
+    },
+    {
+      "startIndex": 7,
+      "endIndex": 8,
+      "scopes": [
+        "source.pluto",
+        "punctuation.separator.colon.pluto"
+      ]
+    },
+    {
+      "startIndex": 8,
+      "endIndex": 9,
+      "scopes": [
+        "source.pluto"
+      ]
+    },
+    {
+      "startIndex": 9,
+      "endIndex": 14,
+      "scopes": [
+        "source.pluto",
+        "keyword.control.pluto"
+      ]
+    }
+  ],
+  [
+    {
+      "startIndex": 0,
+      "endIndex": 3,
+      "scopes": [
+        "source.pluto",
+        "keyword.control.pluto"
+      ]
+    }
+  ],
+  [
+    {
+      "startIndex": 0,
+      "endIndex": 1,
+      "scopes": [
+        "source.pluto"
+      ]
+    }
+  ],
+  [
+    {
+      "startIndex": 0,
+      "endIndex": 8,
+      "scopes": [
+        "source.pluto",
+        "meta.function.pluto",
+        "storage.type.function.pluto"
+      ]
+    },
+    {
+      "startIndex": 8,
+      "endIndex": 9,
+      "scopes": [
+        "source.pluto",
+        "meta.function.pluto"
+      ]
+    },
+    {
+      "startIndex": 9,
+      "endIndex": 10,
+      "scopes": [
+        "source.pluto",
+        "meta.function.pluto",
+        "entity.name.function.pluto"
+      ]
+    },
+    {
+      "startIndex": 10,
+      "endIndex": 11,
+      "scopes": [
+        "source.pluto",
+        "meta.function.pluto",
+        "punctuation.section.group.begin.pluto"
+      ]
+    },
+    {
+      "startIndex": 11,
+      "endIndex": 12,
+      "scopes": [
+        "source.pluto",
+        "meta.function.pluto",
+        "variable.parameter.function.pluto"
+      ]
+    },
+    {
+      "startIndex": 12,
+      "endIndex": 13,
+      "scopes": [
+        "source.pluto",
+        "meta.function.pluto",
+        "meta.typehint.pluto",
+        "punctuation.separator.colon.pluto"
+      ]
+    },
+    {
+      "startIndex": 13,
+      "endIndex": 14,
+      "scopes": [
+        "source.pluto",
+        "meta.function.pluto",
+        "meta.typehint.pluto"
+      ]
+    },
+    {
+      "startIndex": 14,
+      "endIndex": 21,
+      "scopes": [
+        "source.pluto",
+        "meta.function.pluto",
+        "meta.typehint.pluto",
+        "storage.type.primitive.pluto"
+      ]
+    },
+    {
+      "startIndex": 21,
+      "endIndex": 22,
+      "scopes": [
+        "source.pluto",
+        "meta.function.pluto"
+      ]
+    },
+    {
+      "startIndex": 22,
+      "endIndex": 23,
+      "scopes": [
+        "source.pluto",
+        "meta.function.pluto",
+        "meta.default-arguments.pluto",
+        "keyword.operator.assignment.pluto"
+      ]
+    },
+    {
+      "startIndex": 23,
+      "endIndex": 24,
+      "scopes": [
+        "source.pluto",
+        "meta.function.pluto",
+        "meta.default-arguments.pluto"
+      ]
+    },
+    {
+      "startIndex": 24,
+      "endIndex": 25,
+      "scopes": [
+        "source.pluto",
+        "meta.function.pluto",
+        "meta.default-arguments.pluto",
+        "string.quoted.double.pluto",
+        "string.quoted.double.pluto",
+        "punctuation.definition.string.begin.pluto"
+      ]
+    },
+    {
+      "startIndex": 25,
+      "endIndex": 38,
+      "scopes": [
+        "source.pluto",
+        "meta.function.pluto",
+        "meta.default-arguments.pluto",
+        "string.quoted.double.pluto"
+      ]
+    },
+    {
+      "startIndex": 38,
+      "endIndex": 39,
+      "scopes": [
+        "source.pluto",
+        "meta.function.pluto",
+        "meta.default-arguments.pluto",
+        "string.quoted.double.pluto",
+        "string.quoted.double.pluto",
+        "punctuation.definition.string.end.pluto"
+      ]
+    },
+    {
+      "startIndex": 39,
+      "endIndex": 40,
+      "scopes": [
+        "source.pluto",
+        "meta.function.pluto",
+        "punctuation.section.group.end.pluto"
+      ]
+    },
+    {
+      "startIndex": 40,
+      "endIndex": 41,
+      "scopes": [
+        "source.pluto",
+        "meta.function.pluto",
+        "punctuation.separator.colon.pluto"
+      ]
+    },
+    {
+      "startIndex": 41,
+      "endIndex": 42,
+      "scopes": [
+        "source.pluto",
+        "meta.function.pluto"
+      ]
+    },
+    {
+      "startIndex": 42,
+      "endIndex": 46,
+      "scopes": [
+        "source.pluto",
+        "meta.function.pluto",
+        "storage.type.primitive.pluto"
+      ]
+    },
+    {
+      "startIndex": 46,
+      "endIndex": 47,
+      "scopes": [
+        "source.pluto"
+      ]
+    },
+    {
+      "startIndex": 47,
+      "endIndex": 50,
+      "scopes": [
+        "source.pluto",
+        "keyword.control.pluto"
+      ]
+    }
+  ],
+  [
+    {
+      "startIndex": 0,
+      "endIndex": 1,
+      "scopes": [
+        "source.pluto"
+      ]
+    }
+  ],
+  [
+    {
+      "startIndex": 0,
+      "endIndex": 1,
+      "scopes": [
+        "source.pluto"
+      ]
+    },
+    {
+      "startIndex": 1,
+      "endIndex": 3,
+      "scopes": [
+        "source.pluto",
+        "punctuation.accessor.pluto"
+      ]
+    },
+    {
+      "startIndex": 3,
+      "endIndex": 7,
+      "scopes": [
+        "source.pluto",
+        "variable.other.pluto"
+      ]
+    },
+    {
+      "startIndex": 7,
+      "endIndex": 8,
+      "scopes": [
+        "source.pluto"
+      ]
+    },
+    {
+      "startIndex": 8,
+      "endIndex": 10,
+      "scopes": [
+        "source.pluto",
+        "keyword.operator.nullcoal.pluto"
+      ]
+    },
+    {
+      "startIndex": 10,
+      "endIndex": 11,
+      "scopes": [
+        "source.pluto"
+      ]
+    },
+    {
+      "startIndex": 11,
+      "endIndex": 12,
+      "scopes": [
+        "source.pluto",
+        "string.quoted.double.pluto",
+        "string.quoted.double.pluto",
+        "punctuation.definition.string.begin.pluto"
+      ]
+    },
+    {
+      "startIndex": 12,
+      "endIndex": 16,
+      "scopes": [
+        "source.pluto",
+        "string.quoted.double.pluto"
+      ]
+    },
+    {
+      "startIndex": 16,
+      "endIndex": 17,
+      "scopes": [
+        "source.pluto",
+        "string.quoted.double.pluto",
+        "string.quoted.double.pluto",
+        "punctuation.definition.string.end.pluto"
+      ]
+    }
+  ],
+  [
+    {
+      "startIndex": 0,
+      "endIndex": 2,
+      "scopes": [
+        "source.pluto"
+      ]
+    },
+    {
+      "startIndex": 2,
+      "endIndex": 3,
+      "scopes": [
+        "source.pluto",
+        "keyword.operator.ternary.pluto"
+      ]
+    },
+    {
+      "startIndex": 3,
+      "endIndex": 6,
+      "scopes": [
+        "source.pluto"
+      ]
+    },
+    {
+      "startIndex": 6,
+      "endIndex": 7,
+      "scopes": [
+        "source.pluto",
+        "keyword.operator.ternary.pluto"
+      ]
+    },
+    {
+      "startIndex": 7,
+      "endIndex": 10,
+      "scopes": [
+        "source.pluto"
+      ]
+    }
+  ],
+  [
+    {
+      "startIndex": 0,
+      "endIndex": 1,
+      "scopes": [
+        "source.pluto"
+      ]
+    },
+    {
+      "startIndex": 1,
+      "endIndex": 2,
+      "scopes": [
+        "source.pluto",
+        "meta.safe-navigation-array.pluto",
+        "punctuation.accessor.pluto"
+      ]
+    },
+    {
+      "startIndex": 2,
+      "endIndex": 3,
+      "scopes": [
+        "source.pluto",
+        "meta.safe-navigation-array.pluto"
+      ]
+    },
+    {
+      "startIndex": 3,
+      "endIndex": 5,
+      "scopes": [
+        "source.pluto",
+        "constant.numeric.integer.pluto"
+      ]
+    },
+    {
+      "startIndex": 5,
+      "endIndex": 7,
+      "scopes": [
+        "source.pluto"
+      ]
+    }
+  ],
+  [
+    {
+      "startIndex": 0,
+      "endIndex": 1,
+      "scopes": [
+        "source.pluto"
+      ]
+    }
+  ],
+  [
+    {
+      "startIndex": 0,
+      "endIndex": 4,
+      "scopes": [
+        "source.pluto",
+        "meta.goto.pluto",
+        "keyword.control.goto.pluto"
+      ]
+    },
+    {
+      "startIndex": 4,
+      "endIndex": 10,
+      "scopes": [
+        "source.pluto",
+        "meta.goto.pluto"
+      ]
+    },
+    {
+      "startIndex": 10,
+      "endIndex": 11,
+      "scopes": [
+        "source.pluto",
+        "punctuation.terminator.pluto"
+      ]
+    }
+  ],
+  [
+    {
+      "startIndex": 0,
+      "endIndex": 2,
+      "scopes": [
+        "source.pluto",
+        "meta.goto-label.pluto",
+        "punctuation.definition.label.begin.pluto"
+      ]
+    },
+    {
+      "startIndex": 2,
+      "endIndex": 7,
+      "scopes": [
+        "source.pluto",
+        "meta.goto-label.pluto"
+      ]
+    },
+    {
+      "startIndex": 7,
+      "endIndex": 9,
+      "scopes": [
+        "source.pluto",
+        "meta.goto-label.pluto",
+        "punctuation.definition.label.end.pluto"
+      ]
+    }
+  ],
+  [
+    {
+      "startIndex": 0,
+      "endIndex": 1,
+      "scopes": [
+        "source.pluto"
+      ]
+    }
+  ],
+  [
+    {
+      "startIndex": 0,
+      "endIndex": 1,
+      "scopes": [
+        "source.pluto"
+      ]
+    }
+  ],
+  [
+    {
+      "startIndex": 0,
+      "endIndex": 2,
+      "scopes": [
+        "source.pluto",
+        "comment.line.double-dash.pluto",
+        "punctuation.definition.comment.pluto"
+      ]
+    },
+    {
+      "startIndex": 2,
+      "endIndex": 14,
+      "scopes": [
+        "source.pluto",
+        "comment.line.double-dash.pluto"
+      ]
+    }
+  ],
+  [
+    {
+      "startIndex": 0,
+      "endIndex": 2,
+      "scopes": [
+        "source.pluto",
+        "comment.line.double-dash.pluto",
+        "punctuation.definition.comment.pluto"
+      ]
+    },
+    {
+      "startIndex": 2,
+      "endIndex": 3,
+      "scopes": [
+        "source.pluto",
+        "comment.line.double-dash.pluto"
+      ]
+    },
+    {
+      "startIndex": 3,
+      "endIndex": 9,
+      "scopes": [
+        "source.pluto",
+        "comment.line.double-dash.pluto",
+        "entity.name.tag.documentation.pluto"
+      ]
+    },
+    {
+      "startIndex": 9,
+      "endIndex": 28,
+      "scopes": [
+        "source.pluto",
+        "comment.line.double-dash.pluto"
+      ]
+    }
+  ],
+  [
+    {
+      "startIndex": 0,
+      "endIndex": 2,
+      "scopes": [
+        "source.pluto",
+        "comment.line.double-dash.pluto",
+        "punctuation.definition.comment.pluto"
+      ]
+    },
+    {
+      "startIndex": 2,
+      "endIndex": 3,
+      "scopes": [
+        "source.pluto",
+        "comment.line.double-dash.pluto"
+      ]
+    },
+    {
+      "startIndex": 3,
+      "endIndex": 10,
+      "scopes": [
+        "source.pluto",
+        "comment.line.double-dash.pluto",
+        "entity.name.tag.documentation.pluto"
+      ]
+    },
+    {
+      "startIndex": 10,
+      "endIndex": 20,
+      "scopes": [
+        "source.pluto",
+        "comment.line.double-dash.pluto"
+      ]
+    }
+  ],
+  [
+    {
+      "startIndex": 0,
+      "endIndex": 2,
+      "scopes": [
+        "source.pluto",
+        "comment.line.double-dash.pluto",
+        "punctuation.definition.comment.pluto"
+      ]
+    },
+    {
+      "startIndex": 2,
+      "endIndex": 3,
+      "scopes": [
+        "source.pluto",
+        "comment.line.double-dash.pluto"
+      ]
+    },
+    {
+      "startIndex": 3,
+      "endIndex": 7,
+      "scopes": [
+        "source.pluto",
+        "comment.line.double-dash.pluto",
+        "entity.name.tag.documentation.pluto"
+      ]
+    },
+    {
+      "startIndex": 7,
+      "endIndex": 22,
+      "scopes": [
+        "source.pluto",
+        "comment.line.double-dash.pluto"
+      ]
+    }
+  ],
+  [
+    {
+      "startIndex": 0,
+      "endIndex": 1,
+      "scopes": [
+        "source.pluto"
+      ]
+    }
+  ]
+]

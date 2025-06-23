@@ -1,0 +1,79 @@
+[
+  [
+    {
+      "startIndex": 0,
+      "endIndex": 2,
+      "scopes": [
+        "source.pluto",
+        "comment.line.double-dash.pluto",
+        "punctuation.definition.comment.pluto"
+      ]
+    },
+    {
+      "startIndex": 2,
+      "endIndex": 49,
+      "scopes": [
+        "source.pluto",
+        "comment.line.double-dash.pluto"
+      ]
+    }
+  ],
+  [
+    {
+      "startIndex": 0,
+      "endIndex": 1,
+      "scopes": [
+        "source.pluto",
+        "string.quoted.double.pluto",
+        "string.quoted.double.pluto",
+        "punctuation.definition.string.begin.pluto"
+      ]
+    },
+    {
+      "startIndex": 1,
+      "endIndex": 6,
+      "scopes": [
+        "source.pluto",
+        "string.quoted.double.pluto"
+      ]
+    },
+    {
+      "startIndex": 6,
+      "endIndex": 8,
+      "scopes": [
+        "source.pluto",
+        "string.quoted.double.pluto",
+        "constant.character.escape.pluto"
+      ]
+    }
+  ],
+  [
+    {
+      "startIndex": 0,
+      "endIndex": 5,
+      "scopes": [
+        "source.pluto",
+        "string.quoted.double.pluto"
+      ]
+    },
+    {
+      "startIndex": 5,
+      "endIndex": 6,
+      "scopes": [
+        "source.pluto",
+        "string.quoted.double.pluto",
+        "string.quoted.double.pluto",
+        "punctuation.definition.string.end.pluto"
+      ]
+    }
+  ],
+  [
+    {
+      "startIndex": 0,
+      "endIndex": 1,
+      "scopes": [
+        "source.pluto"
+      ]
+    }
+  ]
+]
