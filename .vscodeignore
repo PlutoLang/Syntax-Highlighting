@@ -1,5 +1,6 @@
 Pluto.tmbundle/info.plist
 Pluto.tmbundle/Snippets/**.tmSnippet
+node_modules/
 .gitignore
 *.sublime-build
 visual-check.*
