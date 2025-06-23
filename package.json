@@ -2,11 +2,16 @@
 	"name": "pluto-syntax-highlighting",
 	"displayName": "Pluto Syntax Highlighting",
 	"description": "Provides syntax highlighting and snippets for Pluto, a Lua dialect.",
-	"keywords": ["Pluto language"],
+	"keywords": [
+		"Pluto language"
+	],
 	"version": "0.7.0",
 	"publisher": "calamity-inc",
 	"icon": "icon.png",
 	"repository": "https://github.com/PlutoLang/Syntax-Highlighting",
+	"scripts": {
+		"test": "node test.js"
+	},
 	"engines": {
 		"vscode": "^1.65.0"
 	},
@@ -17,8 +22,12 @@
 		"languages": [
 			{
 				"id": "pluto",
-				"aliases": ["Pluto"],
-				"extensions": [".pluto"],
+				"aliases": [
+					"Pluto"
+				],
+				"extensions": [
+					".pluto"
+				],
 				"configuration": "./language-config.json",
 				"icon": {
 					"light": "icon.png",
@@ -54,5 +63,9 @@
 	"activationEvents": [
 		"onCommand:pluto-syntax-highlighting.run",
 		"onCommand:pluto-syntax-highlighting.lint"
-	]
+	],
+	"devDependencies": {
+		"vscode-oniguruma": "^2.0.1",
+		"vscode-textmate": "^9.2.0"
+	}
 }
