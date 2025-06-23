@@ -29,31 +29,34 @@ async function loadGrammar()
     return registry.loadGrammar("source.pluto");
 }
 
-function createClassificationString(grammar, code)
-{
-    const { tokens } = grammar.tokenizeLine(code);
-    const res = [];
-    for (const token of tokens)
-    {
-        if (token.scopes.length > 1)
-        {
-            res.push(" ".repeat(token.startIndex));
-            res.push("-".repeat(token.endIndex - token.startIndex));
-            res.push(" ".repeat(1 + code.length - token.endIndex));
-            res.push(token.scopes[token.scopes.length - 1]);
-            res.push("\n");
-        }
-    }
-    return res.join("");
-}
-
 async function main()
 {
     const grammar = await loadGrammar();
-    let ok = true;
-    const checkClassification = function(code, expected)
+
+    const createClassificationString = function (code)
     {
-        const actual = createClassificationString(grammar, code);
+        const { tokens } = grammar.tokenizeLine(code);
+        const res = [];
+        for (const token of tokens)
+        {
+            if (token.scopes.length > 1)
+            {
+                res.push(" ".repeat(token.startIndex));
+                res.push("-".repeat(token.endIndex - token.startIndex));
+                res.push(" ".repeat(1 + code.length - token.endIndex));
+                res.push(token.scopes[token.scopes.length - 1]);
+                res.push("\n");
+            }
+        }
+        return res.join("");
+    };
+
+    let ok = true;
+    const checkClassification = function (code, ...expected)
+    {
+        expected = expected.join("\n") + "\n";
+
+        const actual = createClassificationString(code);
         if (actual != expected)
         {
             console.log(`Mismatch for ${code}`);
@@ -62,22 +65,22 @@ async function main()
     };
 
     checkClassification(
-`local enums = {}`,
-`-----            storage.modifier.pluto
-            -    keyword.operator.assignment.pluto
-              -  punctuation.section.table.begin.pluto
-               - punctuation.section.table.end.pluto
-`);
-checkClassification(
-`local a = || -> 1`,
-`-----             storage.modifier.pluto
-      -           entity.name.function.arrow.pluto
-        -         keyword.operator.assignment.pluto
-          -       punctuation.section.group.begin.pluto
-           -      punctuation.section.group.end.pluto
-             --   storage.type.function.arrow.pluto
-                - constant.numeric.integer.pluto
-`);
+        `local enums = {}`,
+        `-----            storage.modifier.pluto`,
+        `            -    keyword.operator.assignment.pluto`,
+        `              -  punctuation.section.table.begin.pluto`,
+        `               - punctuation.section.table.end.pluto`
+    );
+    checkClassification(
+        `local a = || -> 1`,
+        `-----             storage.modifier.pluto`,
+        `      -           entity.name.function.arrow.pluto`,
+        `        -         keyword.operator.assignment.pluto`,
+        `          -       punctuation.section.group.begin.pluto`,
+        `           -      punctuation.section.group.end.pluto`,
+        `             --   storage.type.function.arrow.pluto`,
+        `                - constant.numeric.integer.pluto`
+    );
 
     if (!ok)
     {
