@@ -68,6 +68,16 @@ async function main()
               -  punctuation.section.table.begin.pluto
                - punctuation.section.table.end.pluto
 `);
+checkClassification(
+`local a = || -> 1`,
+`-----             storage.modifier.pluto
+      -           entity.name.function.arrow.pluto
+        -         keyword.operator.assignment.pluto
+          -       punctuation.section.group.begin.pluto
+           -      punctuation.section.group.end.pluto
+             --   storage.type.function.arrow.pluto
+                - constant.numeric.integer.pluto
+`);
 
     if (!ok)
     {
