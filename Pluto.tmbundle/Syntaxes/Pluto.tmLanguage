@@ -714,7 +714,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(?&lt;![^.]\.|:)\b(_G|_VERSION|_PVERSION|math\.(pi|huge|mininteger|maxinteger)|os\.(platform|arch)|json\.(null|withnull|withorder))\b</string>
+					<string>(?&lt;![^.]\.|:)\b(_G|_VERSION|_PVERSION|math\.(pi|huge|mininteger|maxinteger)|os\.(platform|arch)|json\.(null|withnull|withorder|msgpack))\b</string>
 					<key>name</key>
 					<string>constant.language.pluto support.constant.builtin.pluto</string>
 				</dict>
