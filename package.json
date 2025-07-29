@@ -10,7 +10,8 @@
 	"icon": "icon.png",
 	"repository": "https://github.com/PlutoLang/Syntax-Highlighting",
 	"scripts": {
-		"test": "node test.js"
+		"test": "node test.js",
+		"zip": "git archive --format zip --output Pluto-Syntax-Highlighting.zip main"
 	},
 	"engines": {
 		"vscode": "^1.65.0"
