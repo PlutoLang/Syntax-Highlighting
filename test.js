@@ -82,6 +82,30 @@ async function main()
         `                - constant.numeric.integer.pluto`
     );
 
+    const langConfig = JSON.parse(
+        fs.readFileSync(path.join(__dirname, "language-config.json"), "utf8").replace(/\/\/.*$/gm, "")
+    );
+    const increaseIndentPattern = new RegExp(langConfig.indentationRules.increaseIndentPattern);
+    const decreaseIndentPattern = new RegExp(langConfig.indentationRules.decreaseIndentPattern);
+    const checkIndentation = function (code, inc, dec)
+    {
+        const incMatch = increaseIndentPattern.test(code);
+        const decMatch = decreaseIndentPattern.test(code);
+        if (incMatch != inc || decMatch != dec)
+        {
+            console.log(`Indentation mismatch for ${code}`);
+            ok = false;
+        }
+    };
+
+    checkIndentation("function foo()", true, false);
+    checkIndentation("if cond then", true, false);
+    checkIndentation("else", true, true);
+    checkIndentation("end", false, true);
+    checkIndentation("until finished", false, true);
+    checkIndentation("values = {", true, false);
+    checkIndentation("}", false, true);
+
     if (!ok)
     {
         process.exit(1);
