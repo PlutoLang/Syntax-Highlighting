@@ -101,6 +101,12 @@ async function main()
     checkIndentation("function foo()", true, false);
     checkIndentation("if cond then", true, false);
     checkIndentation("else", true, true);
+    checkIndentation("try", true, false);
+    checkIndentation("pluto_try", true, false);
+    checkIndentation("catch e then", true, true);
+    checkIndentation("catch e do", true, true);
+    checkIndentation("pluto_catch e then", true, true);
+    checkIndentation("pluto_catch e do", true, true);
     checkIndentation("end", false, true);
     checkIndentation("until finished", false, true);
     checkIndentation("values = {", true, false);
