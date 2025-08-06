@@ -163,7 +163,6 @@ async function main()
         `                            -                punctuation.separator.colon.pluto`,
         `                             -               meta.typehint.pluto`,
         `                              ---            storage.type.primitive.pluto`,
-        `                                 -           meta.typehint.function.pluto`,
         `                                  -          keyword.operator.assignment.pluto`
     );
 
@@ -264,6 +263,12 @@ async function main()
         `                                    -     punctuation.separator.colon.pluto`,
         `                                     -    meta.typehint.pluto`,
         `                                      --- storage.type.primitive.pluto`
+    );
+    checkClassification(
+        `local f: Callback`,
+        `-----             storage.modifier.pluto`,
+        `       -          punctuation.separator.colon.pluto`,
+        `         -------- storage.type.primitive.pluto`
     );
 
     const langConfig = JSON.parse(
