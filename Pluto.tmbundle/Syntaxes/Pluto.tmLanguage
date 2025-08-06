@@ -109,9 +109,13 @@
                                                 </dict>
                                                <dict>
                                                         <key>include</key>
+                                                        <string>#function_type</string>
+                                               </dict>
+                                               <dict>
+                                                        <key>include</key>
                                                         <string>#table_type</string>
-                                                </dict>
-                                                <dict>
+                                               </dict>
+                                               <dict>
                                                         <key>match</key>
                                                         <string>(:)\s+(\??(?:(?:string|number|int|float|bool(?:ean)?|function|table|userdata|any|nil)\|)*(?:string|number|int|float|bool(?:ean)?|function|table|userdata|any|nil)\??)</string>
                                                         <key>captures</key>
@@ -565,9 +569,13 @@
                                                 </dict>
                                                <dict>
                                                         <key>include</key>
+                                                        <string>#function_type</string>
+                                               </dict>
+                                               <dict>
+                                                        <key>include</key>
                                                         <string>#table_type</string>
-                                                </dict>
-                                                <dict>
+                                               </dict>
+                                               <dict>
                                                         <key>match</key>
                                                         <string>(:)\s+(\??(?:(?:string|number|int|float|bool(?:ean)?|function|table|userdata|any|nil)\|)*(?:string|number|int|float|bool(?:ean)?|function|table|userdata|any|nil)\??)</string>
                                                         <key>captures</key>
@@ -722,8 +730,12 @@
                                    </array>
                            </dict>
                            <dict>
+                                   <key>include</key>
+                                   <string>#function_type</string>
+                           </dict>
+                           <dict>
                                    <key>match</key>
-                                   <string>\b(?&lt;!\.)(local|global)\s+(?!class)(?!pluto_class)(?!function)(?:(and|break|do|else|elseif|end|false|for|function|goto|if|in|local|nil|not|or|repeat|pluto_use|pluto_switch|pluto_continue|pluto_enum|pluto_new|pluto_class|pluto_export|pluto_try|pluto_catch|switch|continue|enum|new|class|export|try|catch|return|then|true|until|while)\b|\w+)(?:\s*(:)\s+(\??(?:(?:string|number|int|float|bool(?:ean)?|function|table|userdata|any|nil)\|)*(?:string|number|int|float|bool(?:ean)?|function|table|userdata|any|nil)\??))?(?!\s*=\s*\|[a-zA-Z0-9_,\s]*\|\s*-&gt;)</string>
+                                   <string>\b(?&lt;!\.)(local|global)\s+(?!class)(?!pluto_class)(?!function)(?:(and|break|do|else|elseif|end|false|for|function|goto|if|in|local|nil|not|or|repeat|pluto_use|pluto_switch|pluto_continue|pluto_enum|pluto_new|pluto_class|pluto_export|pluto_try|pluto_catch|switch|continue|enum|new|class|export|try|catch|return|then|true|until|while)\b|\w+)(?:\s*(:)\s+(?!function\s*\()(\??(?:(?:string|number|int|float|bool(?:ean)?|function|table|userdata|any|nil)\|)*(?:string|number|int|float|bool(?:ean)?|function|table|userdata|any|nil)\??))?(?!\s*=\s*\|[a-zA-Z0-9_,\s]*\|\s*-&gt;)</string>
                                    <key>captures</key>
                                    <dict>
                                            <key>1</key>
@@ -1287,6 +1299,10 @@
                                 </dict>
                                 <dict>
                                         <key>include</key>
+                                        <string>#function_type</string>
+                                </dict>
+                                <dict>
+                                        <key>include</key>
                                         <string>#table_type</string>
                                 </dict>
                                 <dict>
@@ -1312,12 +1328,144 @@
                                         <key>match</key>
                                         <string>;</string>
                                         <key>name</key>
-                                        <string>punctuation.terminator.semicolon.pluto</string>
-                                </dict>
-                        </array>
-                </dict>
-                <key>string_inner</key>
-                <dict>
+<string>punctuation.terminator.semicolon.pluto</string>
+</dict>
+</array>
+</dict>
+<key>function_type</key>
+<dict>
+<key>begin</key>
+<string>(:)\s*(function)\s*(?=\()</string>
+<key>beginCaptures</key>
+<dict>
+<key>1</key>
+<dict>
+<key>name</key>
+<string>punctuation.separator.colon.pluto</string>
+</dict>
+<key>2</key>
+<dict>
+<key>name</key>
+<string>storage.type.function.pluto</string>
+</dict>
+</dict>
+<key>end</key>
+<string>(?=[,)=\}\]\|$])</string>
+<key>name</key>
+<string>meta.typehint.function.pluto</string>
+<key>patterns</key>
+<array>
+<dict>
+<key>begin</key>
+<string>\(</string>
+<key>beginCaptures</key>
+<dict>
+<key>0</key>
+<dict>
+<key>name</key>
+<string>punctuation.section.group.begin.pluto</string>
+</dict>
+</dict>
+<key>end</key>
+<string>\)</string>
+<key>endCaptures</key>
+<dict>
+<key>0</key>
+<dict>
+<key>name</key>
+<string>punctuation.section.group.end.pluto</string>
+</dict>
+</dict>
+<key>patterns</key>
+<array>
+<dict>
+<key>include</key>
+<string>#function_type_params</string>
+</dict>
+</array>
+</dict>
+<dict>
+<key>include</key>
+<string>#function_type</string>
+</dict>
+<dict>
+<key>include</key>
+<string>#table_type</string>
+</dict>
+<dict>
+<key>match</key>
+<string>(:)\s+(\??(?:(?:string|number|int|float|bool(?:ean)?|function|table|userdata|any|nil)\|)*(?:string|number|int|float|bool(?:ean)?|function|table|userdata|any|nil)\??)</string>
+<key>captures</key>
+<dict>
+<key>1</key>
+<dict>
+<key>name</key>
+<string>punctuation.separator.colon.pluto</string>
+</dict>
+<key>2</key>
+<dict>
+<key>name</key>
+<string>storage.type.primitive.pluto</string>
+</dict>
+</dict>
+<key>name</key>
+<string>meta.typehint.pluto</string>
+</dict>
+</array>
+</dict>
+<key>function_type_params</key>
+<dict>
+<key>patterns</key>
+<array>
+<dict>
+<key>match</key>
+<string>[a-zA-Z_][a-zA-Z0-9_]*</string>
+<key>name</key>
+<string>variable.parameter.function.pluto</string>
+</dict>
+<dict>
+<key>match</key>
+<string>,</string>
+<key>name</key>
+<string>punctuation.separator.comma.pluto</string>
+</dict>
+<dict>
+<key>match</key>
+<string>\.\.\.</string>
+<key>name</key>
+<string>constant.language.pluto</string>
+</dict>
+<dict>
+<key>include</key>
+<string>#function_type</string>
+</dict>
+<dict>
+<key>include</key>
+<string>#table_type</string>
+</dict>
+<dict>
+<key>match</key>
+<string>(:)\s+(\??(?:(?:string|number|int|float|bool(?:ean)?|function|table|userdata|any|nil)\|)*(?:string|number|int|float|bool(?:ean)?|function|table|userdata|any|nil)\??)</string>
+<key>captures</key>
+<dict>
+<key>1</key>
+<dict>
+<key>name</key>
+<string>punctuation.separator.colon.pluto</string>
+</dict>
+<key>2</key>
+<dict>
+<key>name</key>
+<string>storage.type.primitive.pluto</string>
+</dict>
+</dict>
+<key>name</key>
+<string>meta.typehint.pluto</string>
+</dict>
+</array>
+</dict>
+<key>string_inner</key>
+<dict>
 			<key>patterns</key>
 			<array>
 				<!-- escaped chars -->
