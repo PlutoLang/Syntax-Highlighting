@@ -146,6 +146,29 @@ async function main()
         `                                  -          keyword.operator.assignment.pluto`
     );
 
+    checkClassification(
+        `local function f(cb: function(a: string): int)`,
+        `-----                                          storage.modifier.pluto`,
+        `      --------                                 storage.type.function.pluto`,
+        `              -                                meta.function.pluto`,
+        `               -                               entity.name.function.pluto`,
+        `                -                              punctuation.section.group.begin.pluto`,
+        `                 --                            variable.parameter.function.pluto`,
+        `                   -                           punctuation.separator.colon.pluto`,
+        `                    -                          meta.typehint.function.pluto`,
+        `                     --------                  storage.type.function.pluto`,
+        `                             -                 punctuation.section.group.begin.pluto`,
+        `                              -                variable.parameter.function.pluto`,
+        `                               -               punctuation.separator.colon.pluto`,
+        `                                -              meta.typehint.pluto`,
+        `                                 ------        storage.type.primitive.pluto`,
+        `                                       -       punctuation.section.group.end.pluto`,
+        `                                        -      punctuation.separator.colon.pluto`,
+        `                                         -     meta.typehint.pluto`,
+        `                                          ---  storage.type.primitive.pluto`,
+        `                                             - punctuation.section.group.end.pluto`
+    );
+
     const langConfig = JSON.parse(
         fs.readFileSync(path.join(__dirname, "language-config.json"), "utf8").replace(/\/\/.*$/gm, "")
     );
