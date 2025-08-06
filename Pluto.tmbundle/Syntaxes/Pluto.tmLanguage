@@ -191,23 +191,59 @@
 					<string>meta.preprocessoralias.pluto</string>
 					<key>patterns</key>
 					<array>
-						<dict>
-							<key>match</key>
-							<string>[a-zA-Z_][a-zA-Z0-9_]*</string>
-							<key>name</key>
-							<string>variable.parameter.preprocessoralias.pluto</string>
-						</dict>
-						<dict>
-							<key>match</key>
-							<string>,</string>
-							<key>name</key>
-							<string>punctuation.separator.comma.pluto</string>
-						</dict>
-					</array>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\b(function)($|\s+)(?:[a-zA-Z_][a-zA-Z0-9_]*([.:]))?([a-zA-Z_][a-zA-Z0-9_]*)?</string>
+                                               <dict>
+                                                       <key>match</key>
+                                                       <string>[a-zA-Z_][a-zA-Z0-9_]*</string>
+                                                       <key>name</key>
+                                                       <string>variable.parameter.preprocessoralias.pluto</string>
+                                               </dict>
+                                               <dict>
+                                                       <key>match</key>
+                                                       <string>,</string>
+                                                       <key>name</key>
+                                                       <string>punctuation.separator.comma.pluto</string>
+                                               </dict>
+                                       </array>
+                               </dict>
+                                <dict>
+                                        <key>begin</key>
+                                        <string>(\$type)\s+(?:[a-zA-Z_][a-zA-Z0-9_]*([.:]))?([a-zA-Z_][a-zA-Z0-9_]*)\s*(=)</string>
+                                        <key>beginCaptures</key>
+                                        <dict>
+                                                <key>1</key>
+                                                <dict>
+                                                        <key>name</key>
+                                                        <string>storage.type.typedef.pluto</string>
+                                                </dict>
+                                                <key>2</key>
+                                                <dict>
+                                                        <key>name</key>
+                                                        <string>punctuation.separator.parameter.pluto</string>
+                                                </dict>
+                                                <key>3</key>
+                                                <dict>
+                                                        <key>name</key>
+                                                        <string>entity.name.type.pluto</string>
+                                                </dict>
+                                                <key>4</key>
+                                                <dict>
+                                                        <key>name</key>
+                                                        <string>keyword.operator.assignment.pluto</string>
+                                                </dict>
+                                        </dict>
+                                        <key>end</key>
+                                        <string>$</string>
+                                        <key>patterns</key>
+                                        <array>
+                                                <dict>
+                                                        <key>include</key>
+                                                        <string>#pluto</string>
+                                                </dict>
+                                        </array>
+                                </dict>
+                                <dict>
+                                        <key>match</key>
+                                        <string>\b(function)($|\s+)(?:[a-zA-Z_][a-zA-Z0-9_]*([.:]))?([a-zA-Z_][a-zA-Z0-9_]*)?</string>
 					<key>captures</key>
 					<dict>
 						<key>1</key>
@@ -482,7 +518,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\$(define|alias)\b</string>
+                                        <string>\$(define|alias|type)\b</string>
 					<key>name</key>
 					<string>storage.modifier.pluto</string>
 				</dict>
