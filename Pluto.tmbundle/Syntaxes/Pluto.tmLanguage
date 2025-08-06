@@ -1328,11 +1328,17 @@
                                         <key>match</key>
                                         <string>;</string>
                                         <key>name</key>
-<string>punctuation.terminator.semicolon.pluto</string>
-</dict>
-</array>
-</dict>
-<key>function_type</key>
+                                        <string>punctuation.terminator.semicolon.pluto</string>
+                                </dict>
+                               <dict>
+                                       <key>match</key>
+                                       <string>,</string>
+                                       <key>name</key>
+                                       <string>punctuation.separator.comma.pluto</string>
+                               </dict>
+                       </array>
+               </dict>
+               <key>function_type</key>
 <dict>
 <key>begin</key>
 <string>(:)\s*(function)\s*(?=\()</string>

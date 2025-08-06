@@ -107,6 +107,41 @@ async function main()
     );
 
     checkClassification(
+        `local p: { x: number, y: number } = { x = 1, y = 2 }`,
+        `-----                                                storage.modifier.pluto`,
+        `     --                                              meta.typehint.table.pluto`,
+        `       -                                             punctuation.separator.colon.pluto`,
+        `        -                                            meta.typehint.table.pluto`,
+        `         -                                           punctuation.section.table.begin.pluto`,
+        `          -                                          meta.typehint.table.pluto`,
+        `           -                                         variable.other.field.pluto`,
+        `            -                                        punctuation.separator.colon.pluto`,
+        `             -                                       meta.typehint.pluto`,
+        `              ------                                 storage.type.primitive.pluto`,
+        `                    -                                punctuation.separator.comma.pluto`,
+        `                     -                               meta.typehint.table.pluto`,
+        `                      -                              variable.other.field.pluto`,
+        `                       -                             punctuation.separator.colon.pluto`,
+        `                        -                            meta.typehint.pluto`,
+        `                         ------                      storage.type.primitive.pluto`,
+        `                               -                     meta.typehint.table.pluto`,
+        `                                -                    punctuation.section.table.end.pluto`,
+        `                                  -                  keyword.operator.assignment.pluto`,
+        `                                    -                punctuation.section.table.begin.pluto`,
+        `                                     ---             meta.table.pluto`,
+        `                                        -            keyword.operator.assignment.pluto`,
+        `                                         -           meta.table.pluto`,
+        `                                          -          constant.numeric.integer.pluto`,
+        `                                           -         punctuation.separator.comma.pluto`,
+        `                                            ---      meta.table.pluto`,
+        `                                               -     keyword.operator.assignment.pluto`,
+        `                                                -    meta.table.pluto`,
+        `                                                 -   constant.numeric.integer.pluto`,
+        `                                                  -  meta.table.pluto`,
+        `                                                   - punctuation.section.table.end.pluto`
+    );
+
+    checkClassification(
         `local function f(cb: { a: string })`,
         `-----                               storage.modifier.pluto`,
         `      --------                      storage.type.function.pluto`,
