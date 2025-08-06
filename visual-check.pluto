@@ -1,12 +1,7 @@
-$type StringOrNumber = string|number
-$type Point = { x: number, y: number }
-$type Point = { x: number; y: number }
-$type Callback = function(a: string): int
-local f: Callback
 
 class Human extends Entity
-        static function sayHello()
-        end
+	static function sayHello()
+	end
 end
 local h = new Human(1 + 2);
 print(h.name .. "\n");
