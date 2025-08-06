@@ -31,8 +31,8 @@
 				],
 				"configuration": "./language-config.json",
 				"icon": {
-					"light": "icon.png",
-					"dark": "icon.png"
+					"light": "icon-flat.png",
+					"dark": "icon-flat.png"
 				}
 			}
 		],
