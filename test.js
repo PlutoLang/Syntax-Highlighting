@@ -59,7 +59,8 @@ async function main()
         const actual = createClassificationString(code);
         if (actual != expected)
         {
-            console.log(`Mismatch for ${code}`);
+            console.log(code + " MISMATCH");
+            console.log(actual);
             ok = false;
         }
     };
@@ -80,6 +81,113 @@ async function main()
         `           -      punctuation.section.group.end.pluto`,
         `             --   storage.type.function.arrow.pluto`,
         `                - constant.numeric.integer.pluto`
+    );
+
+    checkClassification(
+        `local p: { x: number; y: number }`,
+        `-----                             storage.modifier.pluto`,
+        `     --                           meta.typehint.table.pluto`,
+        `       -                          punctuation.separator.colon.pluto`,
+        `        -                         meta.typehint.table.pluto`,
+        `         -                        punctuation.section.table.begin.pluto`,
+        `          -                       meta.typehint.table.pluto`,
+        `           -                      variable.other.field.pluto`,
+        `            -                     punctuation.separator.colon.pluto`,
+        `             -                    meta.typehint.pluto`,
+        `              ------              storage.type.primitive.pluto`,
+        `                    -             punctuation.terminator.semicolon.pluto`,
+        `                     -            meta.typehint.table.pluto`,
+        `                      -           variable.other.field.pluto`,
+        `                       -          punctuation.separator.colon.pluto`,
+        `                        -         meta.typehint.pluto`,
+        `                         ------   storage.type.primitive.pluto`,
+        `                               -  meta.typehint.table.pluto`,
+        `                                - punctuation.section.table.end.pluto`
+    );
+
+    checkClassification(
+        `local p: { x: number, y: number }`,
+        `-----                             storage.modifier.pluto`,
+        `     --                           meta.typehint.table.pluto`,
+        `       -                          punctuation.separator.colon.pluto`,
+        `        -                         meta.typehint.table.pluto`,
+        `         -                        punctuation.section.table.begin.pluto`,
+        `          -                       meta.typehint.table.pluto`,
+        `           -                      variable.other.field.pluto`,
+        `            -                     punctuation.separator.colon.pluto`,
+        `             -                    meta.typehint.pluto`,
+        `              ------              storage.type.primitive.pluto`,
+        `                    -             punctuation.separator.comma.pluto`,
+        `                     -            meta.typehint.table.pluto`,
+        `                      -           variable.other.field.pluto`,
+        `                       -          punctuation.separator.colon.pluto`,
+        `                        -         meta.typehint.pluto`,
+        `                         ------   storage.type.primitive.pluto`,
+        `                               -  meta.typehint.table.pluto`,
+        `                                - punctuation.section.table.end.pluto`
+    );
+
+    checkClassification(
+        `local function f(cb: { a: string })`,
+        `-----                               storage.modifier.pluto`,
+        `      --------                      storage.type.function.pluto`,
+        `              -                     meta.function.pluto`,
+        `               -                    entity.name.function.pluto`,
+        `                -                   punctuation.section.group.begin.pluto`,
+        `                 --                 variable.parameter.function.pluto`,
+        `                   -                punctuation.separator.colon.pluto`,
+        `                    -               meta.typehint.table.pluto`,
+        `                     -              punctuation.section.table.begin.pluto`,
+        `                      -             meta.typehint.table.pluto`,
+        `                       -            variable.other.field.pluto`,
+        `                        -           punctuation.separator.colon.pluto`,
+        `                         -          meta.typehint.pluto`,
+        `                          ------    storage.type.primitive.pluto`,
+        `                                -   meta.typehint.table.pluto`,
+        `                                 -  punctuation.section.table.end.pluto`,
+        `                                  - punctuation.section.group.end.pluto`
+    );
+
+    checkClassification(
+        `local f: function(a: string): int = tonumber`,
+        `-----                                        storage.modifier.pluto`,
+        `       -                                     punctuation.separator.colon.pluto`,
+        `        -                                    meta.typehint.function.pluto`,
+        `         --------                            storage.type.function.pluto`,
+        `                 -                           punctuation.section.group.begin.pluto`,
+        `                  -                          variable.parameter.function.pluto`,
+        `                   -                         punctuation.separator.colon.pluto`,
+        `                    -                        meta.typehint.pluto`,
+        `                     ------                  storage.type.primitive.pluto`,
+        `                           -                 punctuation.section.group.end.pluto`,
+        `                            -                punctuation.separator.colon.pluto`,
+        `                             -               meta.typehint.pluto`,
+        `                              ---            storage.type.primitive.pluto`,
+        `                                 -           meta.typehint.function.pluto`,
+        `                                  -          keyword.operator.assignment.pluto`
+    );
+
+    checkClassification(
+        `local function f(cb: function(a: string): int)`,
+        `-----                                          storage.modifier.pluto`,
+        `      --------                                 storage.type.function.pluto`,
+        `              -                                meta.function.pluto`,
+        `               -                               entity.name.function.pluto`,
+        `                -                              punctuation.section.group.begin.pluto`,
+        `                 --                            variable.parameter.function.pluto`,
+        `                   -                           punctuation.separator.colon.pluto`,
+        `                    -                          meta.typehint.function.pluto`,
+        `                     --------                  storage.type.function.pluto`,
+        `                             -                 punctuation.section.group.begin.pluto`,
+        `                              -                variable.parameter.function.pluto`,
+        `                               -               punctuation.separator.colon.pluto`,
+        `                                -              meta.typehint.pluto`,
+        `                                 ------        storage.type.primitive.pluto`,
+        `                                       -       punctuation.section.group.end.pluto`,
+        `                                        -      punctuation.separator.colon.pluto`,
+        `                                         -     meta.typehint.pluto`,
+        `                                          ---  storage.type.primitive.pluto`,
+        `                                             - punctuation.section.group.end.pluto`
     );
 
     const langConfig = JSON.parse(
