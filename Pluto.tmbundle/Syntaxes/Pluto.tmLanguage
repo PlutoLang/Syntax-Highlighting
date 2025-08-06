@@ -533,7 +533,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\$(define|alias)\b</string>
+					<string>\$(define|alias|haltcompiler)\b</string>
 					<key>name</key>
 					<string>storage.modifier.pluto</string>
 				</dict>
