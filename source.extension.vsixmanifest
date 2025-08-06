@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="Pluto_VSIX.780a548a-8a45-4ac3-ac7c-e026eba3c2dc" Version="0.7.1" Language="en-US" Publisher="Calamity Inc" />
+        <Identity Id="Pluto_VSIX.780a548a-8a45-4ac3-ac7c-e026eba3c2dc" Version="0.8.0" Language="en-US" Publisher="Calamity Inc" />
         <DisplayName>Pluto Syntax Highlighting</DisplayName>
         <Description xml:space="preserve">Provides syntax highlighting and snippets for Pluto, a Lua dialect.</Description>
         <Icon>icon.png</Icon>
