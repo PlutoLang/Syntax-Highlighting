@@ -270,6 +270,35 @@ async function main()
         `       -          punctuation.separator.colon.pluto`,
         `         -------- storage.type.primitive.pluto`
     );
+    checkClassification(
+        `$declare _PVERSION: string`,
+        `--------                   storage.modifier.pluto`,
+        `                  -        punctuation.separator.colon.pluto`,
+        `                    ------ storage.type.primitive.pluto`
+    );
+    checkClassification(
+        `$declare function tonumber(str: string, base: ?number): number`,
+        `--------                                                       storage.modifier.pluto`,
+        `        -                                                      meta.function.pluto`,
+        `         --------                                              storage.type.function.pluto`,
+        `                 -                                             meta.function.pluto`,
+        `                  --------                                     entity.name.function.pluto`,
+        `                          -                                    punctuation.section.group.begin.pluto`,
+        `                           ---                                 variable.parameter.function.pluto`,
+        `                              -                                punctuation.separator.colon.pluto`,
+        `                               -                               meta.typehint.pluto`,
+        `                                ------                         storage.type.primitive.pluto`,
+        `                                      -                        punctuation.separator.comma.pluto`,
+        `                                       -                       meta.function.pluto`,
+        `                                        ----                   variable.parameter.function.pluto`,
+        `                                            -                  punctuation.separator.colon.pluto`,
+        `                                             -                 meta.typehint.pluto`,
+        `                                              -------          storage.type.primitive.pluto`,
+        `                                                     -         punctuation.section.group.end.pluto`,
+        `                                                      -        punctuation.separator.colon.pluto`,
+        `                                                       -       meta.function.pluto`,
+        `                                                        ------ storage.type.primitive.pluto`
+    );
 
     const langConfig = JSON.parse(
         fs.readFileSync(path.join(__dirname, "language-config.json"), "utf8").replace(/\/\/.*$/gm, "")
