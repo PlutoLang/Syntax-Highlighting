@@ -190,6 +190,82 @@ async function main()
         `                                             - punctuation.section.group.end.pluto`
     );
 
+    checkClassification(
+        `$type StringOrNumber = string|number`,
+        `-----                                storage.type.named.pluto`,
+        `     -                               meta.type.named.pluto`,
+        `      --------------                 entity.name.type.pluto`,
+        `                    -                meta.type.named.pluto`,
+        `                     -               keyword.operator.assignment.pluto`,
+        `                      -              meta.type.named.pluto`,
+        `                       ------------- storage.type.primitive.pluto`
+    );
+    checkClassification(
+        `$type Point = { x: number, y: number }`,
+        `-----                                  storage.type.named.pluto`,
+        `     -                                 meta.type.named.pluto`,
+        `      -----                            entity.name.type.pluto`,
+        `           -                           meta.type.named.pluto`,
+        `            -                          keyword.operator.assignment.pluto`,
+        `             -                         meta.type.named.pluto`,
+        `              -                        punctuation.section.table.begin.pluto`,
+        `               -                       meta.typehint.table.pluto`,
+        `                -                      variable.other.field.pluto`,
+        `                 -                     punctuation.separator.colon.pluto`,
+        `                  -                    meta.typehint.pluto`,
+        `                   ------              storage.type.primitive.pluto`,
+        `                         -             punctuation.separator.comma.pluto`,
+        `                          -            meta.typehint.table.pluto`,
+        `                           -           variable.other.field.pluto`,
+        `                            -          punctuation.separator.colon.pluto`,
+        `                             -         meta.typehint.pluto`,
+        `                              ------   storage.type.primitive.pluto`,
+        `                                    -  meta.typehint.table.pluto`,
+        `                                     - punctuation.section.table.end.pluto`
+    );
+    checkClassification(
+        `$type Point = { x: number; y: number }`,
+        `-----                                  storage.type.named.pluto`,
+        `     -                                 meta.type.named.pluto`,
+        `      -----                            entity.name.type.pluto`,
+        `           -                           meta.type.named.pluto`,
+        `            -                          keyword.operator.assignment.pluto`,
+        `             -                         meta.type.named.pluto`,
+        `              -                        punctuation.section.table.begin.pluto`,
+        `               -                       meta.typehint.table.pluto`,
+        `                -                      variable.other.field.pluto`,
+        `                 -                     punctuation.separator.colon.pluto`,
+        `                  -                    meta.typehint.pluto`,
+        `                   ------              storage.type.primitive.pluto`,
+        `                         -             punctuation.terminator.semicolon.pluto`,
+        `                          -            meta.typehint.table.pluto`,
+        `                           -           variable.other.field.pluto`,
+        `                            -          punctuation.separator.colon.pluto`,
+        `                             -         meta.typehint.pluto`,
+        `                              ------   storage.type.primitive.pluto`,
+        `                                    -  meta.typehint.table.pluto`,
+        `                                     - punctuation.section.table.end.pluto`
+    );
+    checkClassification(
+        `$type Callback = function(a: string): int`,
+        `-----                                     storage.type.named.pluto`,
+        `     -                                    meta.type.named.pluto`,
+        `      --------                            entity.name.type.pluto`,
+        `              -                           meta.type.named.pluto`,
+        `               -                          keyword.operator.assignment.pluto`,
+        `                -                         meta.type.named.pluto`,
+        `                 --------                 storage.type.function.pluto`,
+        `                         -                punctuation.section.group.begin.pluto`,
+        `                          -               variable.parameter.function.pluto`,
+        `                           -              punctuation.separator.colon.pluto`,
+        `                            -             meta.typehint.pluto`,
+        `                             ------       storage.type.primitive.pluto`,
+        `                                   -      punctuation.section.group.end.pluto`,
+        `                                    -     punctuation.separator.colon.pluto`,
+        `                                     -    meta.typehint.pluto`,
+        `                                      --- storage.type.primitive.pluto`
+    );
+
     const langConfig = JSON.parse(
         fs.readFileSync(path.join(__dirname, "language-config.json"), "utf8").replace(/\/\/.*$/gm, "")
     );
