@@ -727,6 +727,12 @@
 				</dict>
 				<dict>
 					<key>match</key>
+					<string>\$(?:if|elseif|else|end)\b</string>
+					<key>name</key>
+					<string>keyword.control.pluto</string>
+				</dict>
+				<dict>
+					<key>match</key>
 					<string>\b(?&lt;![.:])(break|continue|do|else|for|if|elseif|goto|return|switch|pluto_switch|then|repeat|while|until|end|in|as|case|default|begin|pluto_use|pluto_try|pluto_catch|try|catch)\b</string>
 					<key>name</key>
 					<string>keyword.control.pluto</string>

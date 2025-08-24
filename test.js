@@ -313,6 +313,21 @@ async function main()
         `                                                        ------ storage.type.primitive.pluto`
     );
 
+    checkClassification(
+        `$if true then`,
+        `---           keyword.control.pluto`,
+        `    ----      constant.language.pluto`,
+        `         ---- keyword.control.pluto`
+    );
+    checkClassification(
+        `$else`,
+        `----- keyword.control.pluto`
+    );
+    checkClassification(
+        `$end`,
+        `---- keyword.control.pluto`
+    );
+
     const langConfig = JSON.parse(
         fs.readFileSync(path.join(__dirname, "language-config.json"), "utf8").replace(/\/\/.*$/gm, "")
     );
