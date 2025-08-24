@@ -190,6 +190,19 @@ async function main()
     );
 
     checkClassification(
+        `local function f(): (bool, int)`,
+        `-----                           storage.modifier.pluto`,
+        `      --------                  storage.type.function.pluto`,
+        `              -                 meta.function.pluto`,
+        `               -                entity.name.function.pluto`,
+        `                -               punctuation.section.group.begin.pluto`,
+        `                 -              punctuation.section.group.end.pluto`,
+        `                  -             punctuation.separator.colon.pluto`,
+        `                   -            meta.function.pluto`,
+        `                    ----------- storage.type.primitive.pluto`
+    );
+
+    checkClassification(
         `$type StringOrNumber = string|number`,
         `-----                                storage.type.named.pluto`,
         `     -                               meta.type.named.pluto`,
