@@ -342,6 +342,8 @@ async function main()
     checkIndentation("until finished", false, true);
     checkIndentation("values = {", true, false);
     checkIndentation("}", false, true);
+    checkIndentation("$type Func = function(_: string): void", false, false);
+    checkIndentation("$declare function tonumber(str: string, base: ?number): number", false, false);
 
     if (!ok)
     {

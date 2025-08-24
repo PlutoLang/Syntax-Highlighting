@@ -7,7 +7,7 @@
 		<dict>
 			<!-- Keep in sync with language-config.json -->
 			<key>increaseIndentPattern</key>
-			<string>(^\s*\$?\b((local)?[\s\w=]+)?(function|repeat|else|elseif|if|while|class|pluto_class|enum|pluto_enum|try|pluto_try)\b((?!\bend\b).)*$|^.*\b(do|then)\b((?!\bend\b).)*$|^.*\{((?!\}).)*$)</string>
+			<string>(^\s*\$?(?!declare\s+function\b)\b((local)?[\s\w=]+)?(function(?!\s*\([^)]*\)\s*:)|repeat|else|elseif|if|while|class|pluto_class|enum|pluto_enum|try|pluto_try)\b((?!\bend\b).)*$|^.*\b(do|then)\b((?!\bend\b).)*$|^.*\{((?!\}).)*$)</string>
 			<key>decreaseIndentPattern</key>
 			<string>(^\s*\$?\b(elsei|elseif|else|catch|pluto_catch|end|until)\b.*$|^((?!\{).)*\}\;?.*$)</string>
 		</dict>
