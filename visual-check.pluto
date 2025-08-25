@@ -30,3 +30,16 @@ goto label;
 -- @param p1 first parameter
 -- @return something
 -- @see other function
+
+
+$type StringOrNumber = string|number
+$type Point = { x: number, y: number }
+$type Point = { x: number; y: number }
+$type Callback = function(a: string): int
+
+local f: function(a: string): int = tonumber
+local function f(cb: function(a: string): int) end
+
+local p: { x: number, y: number } = { x = 1, y = 2 }
+local p: { x: number; y: number } = { x = 1, y = 2 }
+local function f(cb: { a: string }) end
