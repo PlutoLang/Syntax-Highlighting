@@ -362,6 +362,7 @@ async function main()
     checkIndentation("}", false, true);
     checkIndentation("$type Func = function(_: string): void", false, false);
     checkIndentation("$declare function tonumber(str: string, base: ?number): number", false, false);
+    checkIndentation("local entry", false, false);
 
     if (!ok)
     {
