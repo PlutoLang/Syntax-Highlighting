@@ -358,6 +358,9 @@ async function main()
     checkIndentation("pluto_catch e do", true, true);
     checkIndentation("end", false, true);
     checkIndentation("until finished", false, true);
+    checkIndentation("repeat", true, false);
+    checkIndentation("repeat until true", false, false);
+    checkIndentation("repeat tick() until finished", false, false);
     checkIndentation("values = {", true, false);
     checkIndentation("}", false, true);
     checkIndentation("$type Func = function(_: string): void", false, false);
