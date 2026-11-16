@@ -360,6 +360,11 @@ async function main()
     checkIndentation("$type Func = function(_: string): void", false, false);
     checkIndentation("$declare function tonumber(str: string, base: ?number): number", false, false);
     checkIndentation("local entry", false, false);
+    checkIndentation("function end()", true, false);
+    checkIndentation("local function end()", true, false);
+    checkIndentation("if t.end then", true, false);
+    checkIndentation("t.end()", false, false);
+    checkIndentation("t:end()", false, false);
 
     if (!ok)
     {
