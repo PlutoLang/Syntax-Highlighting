@@ -351,6 +351,9 @@ async function main()
     checkIndentation("if cond then", true, false);
     checkIndentation("else", true, true);
     checkIndentation("end", false, true);
+    checkIndentation("end, function()", true, true);
+    checkIndentation("end, function() end", false, true);
+    checkIndentation("end, function(a: string): int", true, true);
     checkIndentation("until finished", false, true);
     checkIndentation("repeat", true, false);
     checkIndentation("repeat until true", false, false);
